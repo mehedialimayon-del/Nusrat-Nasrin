@@ -32,7 +32,6 @@
             position: relative;
         }
 
-        /* আপনার সাইটের মতো বড় এবং প্রিমিয়াম ইমেজ স্টাইল */
         .image-container {
             width: 100%;
             position: relative;
@@ -41,9 +40,8 @@
         .image-container img {
             width: 100%;
             height: auto;
-            max-height: 480px;
-            object-fit: cover;
             display: block;
+            object-fit: cover;
         }
 
         .name-section {
@@ -60,12 +58,14 @@
         }
 
         .title-tags {
-            font-size: 11px;
+            font-size: 10px;
             color: #ff7f00;
             font-weight: 600;
             letter-spacing: 0.5px;
             margin-bottom: 25px;
             text-transform: uppercase;
+            text-align: center;
+            padding: 0 10px;
         }
 
         .button-group {
@@ -89,12 +89,11 @@
             padding: 14px 10px;
             text-align: center;
             text-decoration: none;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 600;
             border-radius: 8px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            transition: all 0.3s ease;
         }
 
         .menu-btn.primary {
@@ -102,18 +101,14 @@
             color: #ffffff;
             border: 1px solid #ff7f00;
         }
-
-        .menu-btn:hover {
-            opacity: 0.9;
-        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- আপনার ছবির মাপের সাথে মিল রেখে ফুল উইডথ ইমেজ সেকশন -->
+        <!-- ছবির সঠিক ফাইল নাম এখানে নিশ্চিত করুন (যেমন: nusrat.jpg বা আপনার আপলোড করা নাম) -->
         <div class="image-container">
-            <img src="nusrat-image.jpg" alt="Nusrat Nasrin">
+            <img src="nusrat.jpg" alt="Nusrat Nasrin">
         </div>
 
         <div class="name-section">
