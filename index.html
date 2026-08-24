@@ -6,7 +6,20 @@
 
 <title>Parves Hira | Head of Sales</title>
 
+<meta name="description"
+content="Professional portfolio of Parves Hira, Head of Sales - Modern Trade, Pinnacle Foods Sdn Bhd.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
 *{
     margin:0;
     padding:0;
@@ -18,9 +31,9 @@ html{
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#061a38;
-    color:#12233f;
+    font-family:'Inter',Arial,sans-serif;
+    background:#071b3a;
+    color:#10213f;
     overflow-x:hidden;
 }
 
@@ -29,95 +42,202 @@ a{
     color:inherit;
 }
 
-/* NAVBAR */
+:root{
+    --navy:#071b3a;
+    --navy2:#0a2855;
+    --blue:#1769d5;
+    --blue2:#2d83f6;
+    --light:#f5f9ff;
+    --white:#ffffff;
+    --text:#142542;
+    --muted:#65738a;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
 
 .navbar{
     position:fixed;
     top:14px;
     left:50%;
     transform:translateX(-50%);
-    width:calc(100% - 30px);
-    max-width:1150px;
+
+    width:calc(100% - 28px);
+    max-width:1180px;
+
     height:62px;
-    background:rgba(255,255,255,.97);
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(15px);
+
     border-radius:18px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:0 24px;
-    z-index:1000;
-    box-shadow:0 10px 30px rgba(0,30,70,.12);
+
+    padding:0 25px;
+
+    z-index:9999;
+
+    box-shadow:0 12px 35px rgba(10,45,90,.10);
 }
 
 .logo{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:11px;
+
     font-size:14px;
     font-weight:800;
-    color:#1c3558;
+    color:#193253;
 }
 
-.logo-circle{
+.logo-mark{
     width:38px;
     height:38px;
-    border:1px solid #d8e4f2;
+
     border-radius:50%;
+
+    background:#fff;
+    border:1px solid #d8e5f6;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#1857a5;
+
+    color:#174e9b;
     font-size:12px;
+    font-weight:800;
 }
 
-.nav{
+.logo span{
+    color:#174e9b;
+}
+
+.nav-links{
     display:flex;
-    gap:30px;
+    align-items:center;
+    gap:29px;
 }
 
-.nav a{
-    font-size:12px;
+.nav-links a{
+    font-size:11px;
     font-weight:600;
-    color:#263750;
+    color:#243553;
+
+    position:relative;
+    padding:23px 0;
+
+    transition:.3s;
 }
 
-.nav a:hover{
+.nav-links a:hover{
     color:#1769d5;
 }
 
-.menu{
+.nav-links a.active::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:34px;
+    height:3px;
+
+    background:#1769d5;
+
+    border-radius:10px;
+}
+
+.menu-btn{
     display:none;
-    border:0;
-    background:#edf5ff;
-    color:#1769d5;
+
     width:40px;
     height:40px;
-    border-radius:11px;
-    font-size:21px;
+
+    border:0;
+    border-radius:10px;
+
+    background:#edf5ff;
+
+    color:#1769d5;
+
+    font-size:20px;
 }
 
-/* HERO */
+
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
-    min-height:650px;
-    padding-top:110px;
+    min-height:620px;
+
+    padding-top:95px;
+
     background:
-        radial-gradient(circle at 85% 30%,#e3efff 0%,transparent 32%),
-        linear-gradient(135deg,#ffffff,#f2f7fd);
-    border-radius:0 0 45px 45px;
-    overflow:hidden;
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(45,131,246,.09),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5f9ff 100%
+        );
+
     position:relative;
+    overflow:hidden;
+
+    border-radius:0 0 42px 42px;
 }
 
-.hero:before{
+.hero::before{
     content:"";
+
     position:absolute;
-    width:560px;
-    height:560px;
+
+    width:520px;
+    height:520px;
+
     border-radius:50%;
+
     background:#edf5ff;
-    right:-260px;
-    top:-120px;
+
+    right:-220px;
+    top:-100px;
+
+    opacity:.75;
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    right:30px;
+    bottom:-60px;
+
+    background-image:
+        radial-gradient(
+            #c8d9ef 1.5px,
+            transparent 1.5px
+        );
+
+    background-size:10px 10px;
+
+    opacity:.65;
 }
 
 .container{
@@ -129,284 +249,2450 @@ a{
 }
 
 .hero-grid{
-    min-height:520px;
+    min-height:525px;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     align-items:center;
+
     gap:35px;
 }
 
-.welcome{
-    font-size:11px;
-    letter-spacing:2px;
-    color:#586981;
-    font-weight:600;
-    margin-bottom:20px;
+.hero-content{
+    padding-left:5px;
 }
 
-.welcome:before{
+.welcome{
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    color:#4c5d76;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:1.6px;
+
+    margin-bottom:22px;
+}
+
+.welcome::before{
     content:"";
-    display:inline-block;
+
     width:25px;
     height:2px;
-    background:#286dc0;
-    vertical-align:middle;
-    margin-right:10px;
+
+    background:#365d8f;
 }
 
-h1{
-    font-size:70px;
-    line-height:.9;
+.hero h1{
+    font-size:clamp(52px,6vw,75px);
+
+    line-height:.91;
+
     letter-spacing:-3px;
+
+    font-weight:900;
+
     color:#071b3a;
-    margin-bottom:25px;
+
+    margin-bottom:23px;
 }
 
-h1 span{
-    color:#1763bd;
+.hero h1 span{
+    color:#185eb9;
 }
 
 .designation{
     font-size:14px;
-    line-height:1.7;
-    letter-spacing:2.5px;
+
+    letter-spacing:3px;
+
     font-weight:600;
-    color:#40526b;
+
+    color:#354762;
+
+    line-height:1.65;
 }
 
-.designation span{
-    color:#1763bd;
+.designation strong{
+    color:#185eb9;
 }
 
 .hero-line{
-    width:60px;
+    width:58px;
     height:3px;
+
     background:#1769d5;
+
     margin:22px 0;
 }
 
-.description{
-    max-width:390px;
-    color:#66758b;
-    font-size:13px;
-    line-height:1.8;
+.hero-description{
+    max-width:330px;
+
+    color:#65738a;
+
+    font-size:12px;
+
+    line-height:1.85;
 }
 
 .socials{
     display:flex;
-    gap:12px;
+    gap:13px;
     margin-top:25px;
 }
 
 .socials a{
     width:45px;
     height:45px;
-    background:#fff;
-    border:1px solid #dfe8f2;
+
     border-radius:50%;
+
+    background:white;
+
+    border:1px solid #e1eaf5;
+
+    box-shadow:0 8px 18px rgba(30,70,120,.10);
+
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#183d6c;
-    font-weight:600;
-    box-shadow:0 8px 20px rgba(30,70,120,.1);
+
+    color:#173f75;
+
+    font-size:17px;
+
+    transition:.3s;
 }
 
-/* PROFILE IMAGE */
+.socials a:hover{
+    transform:translateY(-4px);
 
-.photo-area{
+    background:#1769d5;
+    color:white;
+}
+
+
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
+
+.hero-photo{
     height:500px;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
+
     position:relative;
 }
 
-.photo-ring{
-    width:470px;
-    height:470px;
+.photo-circle{
+    width:430px;
+    height:430px;
+
     border-radius:50%;
-    border:1px solid #cad8e8;
-    position:absolute;
-}
 
-.photo-ring.two{
-    width:510px;
-    height:510px;
-}
+    background:
+        linear-gradient(
+            145deg,
+            #0a2855,
+            #09214a
+        );
 
-.photo-ring.three{
-    width:530px;
-    height:530px;
-    border:3px solid #17477f;
-    border-left-color:transparent;
-    border-bottom-color:#287bdc;
-    transform:rotate(25deg);
-}
-
-.photo{
-    width:420px;
-    height:420px;
-    border-radius:50%;
-    overflow:hidden;
     border:10px solid white;
-    background:#092451;
-    box-shadow:0 20px 45px rgba(10,40,80,.2);
-    z-index:3;
+
+    box-shadow:0 20px 45px rgba(8,36,76,.18);
+
+    position:relative;
+
+    overflow:hidden;
+
+    z-index:2;
 }
 
-.photo img{
+.photo-circle img{
     width:100%;
     height:100%;
+
     object-fit:cover;
     object-position:center top;
 }
 
-/* DARK CONTENT */
+.ring1{
+    position:absolute;
 
-.dark{
-    background:#061a38;
-    padding:45px 0 60px;
-    color:#fff;
+    width:470px;
+    height:470px;
+
+    border-radius:50%;
+
+    border:1px solid #cbdced;
+
+    z-index:1;
 }
 
-.section-title{
+.ring2{
+    position:absolute;
+
+    width:510px;
+    height:510px;
+
+    border-radius:50%;
+
+    border:1px solid #dce7f4;
+
+    z-index:1;
+}
+
+.ring3{
+    position:absolute;
+
+    width:530px;
+    height:530px;
+
+    border-radius:50%;
+
+    border-top:3px solid #0c397b;
+    border-right:3px solid transparent;
+    border-bottom:3px solid #1769d5;
+    border-left:3px solid transparent;
+
+    transform:rotate(28deg);
+
+    z-index:1;
+}
+
+
+/* =========================================================
+   DARK SECTION
+========================================================= */
+
+.dark-section{
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #12366b,
+            transparent 45%
+        ),
+        #071b3a;
+
+    padding:48px 0 55px;
+
+    color:white;
+}
+
+.section-top{
     display:flex;
     align-items:center;
     gap:20px;
-    margin-bottom:24px;
+    margin-bottom:25px;
 }
 
-.section-title h2{
-    font-size:12px;
+.section-top h2{
+    font-size:11px;
     letter-spacing:1.5px;
     white-space:nowrap;
 }
 
 .section-line{
-    flex:1;
     height:1px;
-    background:rgba(150,190,235,.3);
+    background:rgba(120,165,220,.35);
+    flex:1;
 }
 
-/* BUTTONS */
-
-.buttons{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:14px;
-    margin-bottom:25px;
+.section-note{
+    font-size:10px;
+    color:#9eafc7;
+    white-space:nowrap;
 }
 
-.button-card{
-    min-height:78px;
-    padding:15px 18px;
-    background:#fff;
-    color:#172944;
-    border-radius:17px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
-    transition:.25s;
-}
 
-.button-card:hover{
-    transform:translateY(-4px);
-}
-
-.button-left{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.icon{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    background:#edf5ff;
-    color:#1763bd;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:17px;
-}
-
-.button-card strong{
-    font-size:11px;
-}
-
-.arrow{
-    width:27px;
-    height:27px;
-    border-radius:50%;
-    background:#e7f0fb;
-    color:#1769d5;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-/* SKILLS */
+/* =========================================================
+   SKILLS
+========================================================= */
 
 .skills{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:15px;
+    gap:14px;
 }
 
-.skill{
-    background:#fff;
-    color:#142542;
-    border-radius:20px;
-    padding:28px 22px;
+.skill-card{
+    min-height:260px;
+
+    background:linear-gradient(180deg,#ffffff,#f7faff);
+
+    border-radius:19px;
+
+    padding:27px 22px;
+
+    color:#10213f;
+
     text-align:center;
-    min-height:245px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-6px);
 }
 
 .skill-icon{
-    width:62px;
-    height:62px;
+    width:65px;
+    height:65px;
+
+    margin:0 auto 25px;
+
     border-radius:50%;
-    background:#1559a9;
-    color:#fff;
-    margin:0 auto 22px;
+
+    background:linear-gradient(145deg,#1c63bc,#0d438e);
+
+    color:white;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:24px;
+
+    font-size:25px;
 }
 
-.skill h3{
+.skill-card h3{
     font-size:14px;
-    margin-bottom:15px;
+    margin-bottom:18px;
+    font-weight:800;
 }
 
-.skill p{
+.skill-card p{
+    color:#52627a;
     font-size:11px;
-    color:#5e6d82;
-    line-height:1.8;
+    line-height:1.9;
+    max-width:210px;
+    margin:auto;
 }
 
-.blue-line{
-    width:22px;
+.skill-line{
+    width:23px;
     height:3px;
+
     background:#1769d5;
-    margin:25px auto 0;
+
+    border-radius:10px;
+
+    margin:28px auto 0;
 }
 
-/* STATS */
+
+/* =========================================================
+   PATHWAY BUTTONS
+========================================================= */
+
+.pathway{
+    margin-top:15px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:14px;
+}
+
+.path{
+    min-height:75px;
+
+    padding:17px;
+
+    border-radius:17px;
+
+    background:#ffffff;
+
+    color:#172844;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
+
+.path:hover{
+    transform:translateY(-4px);
+
+    box-shadow:0 14px 30px rgba(0,0,0,.16);
+}
+
+.path-left{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+
+.path-icon{
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#eef5ff;
+
+    color:#175aaf;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:17px;
+}
+
+.path h3{
+    font-size:12px;
+    font-weight:700;
+}
+
+.path-arrow{
+    width:27px;
+    height:27px;
+
+    border-radius:50%;
+
+    background:#e7f0fb;
+
+    color:#1769d5;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+}
+
+.quote{
+    grid-column:span 2;
+
+    min-height:75px;
+
+    border-radius:17px;
+
+    background:#fff;
+
+    color:#213452;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:20px 25px;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
+
+.quote-mark{
+    font-size:45px;
+
+    color:#dce8f7;
+
+    margin-right:15px;
+
+    line-height:1;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
 
 .stats{
-    margin-top:28px;
-    background:#09234a;
-    border:1px solid rgba(100,160,230,.25);
-    border-radius:20px;
+    margin-top:30px;
+
+    border-radius:22px;
+
+    background:linear-gradient(145deg,#071b3a,#0b2b5a);
+
+    border:1px solid rgba(107,164,239,.22);
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
+    overflow:hidden;
 }
 
 .stat{
-    padding:24px 10px;
-    text
+    padding:25px 12px;
+
+    text-align:center;
+
+    border-right:1px solid rgba(255,255,255,.15);
+}
+
+.stat:last-child{
+    border-right:0;
+}
+
+.stat-number{
+    color:white;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    margin-bottom:6px;
+}
+
+.stat-label{
+    color:#d6e0ee;
+
+    font-size:11px;
+
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   INNER SECTIONS
+========================================================= */
+
+.inner-section{
+    padding:90px 0;
+    background:#f5f9ff;
+    color:#132541;
+}
+
+.inner-section:nth-of-type(even){
+    background:#ffffff;
+}
+
+.section-heading-small{
+    color:#1b68c8;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+}
+
+.inner-section h2{
+    font-size:38px;
+
+    letter-spacing:-1.5px;
+
+    margin-bottom:20px;
+}
+
+.inner-section h2 span{
+    color:#1769d5;
+}
+
+.content-text{
+    color:#65738a;
+
+    font-size:13px;
+
+    line-height:1.9;
+
+    max-width:720px;
+}
+
+.info-grid{
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+}
+
+.info-box{
+    padding:22px;
+
+    border-radius:16px;
+
+    background:#fff;
+
+    border:1px solid #e2ebf5;
+
+    box-shadow:0 7px 20px rgba(30,65,110,.05);
+}
+
+.info-box small{
+    display:block;
+
+    color:#8491a4;
+
+    font-size:9px;
+
+    margin-bottom:6px;
+
+    letter-spacing:1px;
+}
+
+.info-box strong{
+    font-size:13px;
+    color:#172a48;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-section{
+    padding:90px 0;
+    background:#f5f9ff;
+}
+
+.gallery-grid{
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+}
+
+.gallery-item{
+    height:230px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#dbe7f5;
+
+    border:1px solid #dfe9f4;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.06);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.contact-grid{
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+}
+
+.contact-card{
+    padding:27px;
+
+    border-radius:18px;
+
+    background:#f5f9ff;
+
+    border:1px solid #e0eaf5;
+}
+
+.contact-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+}
+
+.contact-item:last-child{
+    margin-bottom:0;
+}
+
+.contact-icon{
+    width:45px;
+    height:45px;
+
+    border-radius:13px;
+
+    background:#e9f2ff;
+
+    color:#1769d5;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.contact-item small{
+    display:block;
+
+    color:#8996a9;
+
+    font-size:9px;
+
+    margin-bottom:4px;
+}
+
+.contact-item strong{
+    font-size:12px;
+
+    color:#172a48;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#061731;
+
+    color:#9aacc4;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:10px;
+}
+
+footer strong{
+    color:white;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:900px){
+
+    .navbar{
+        width:calc(100% - 20px);
+        top:10px;
+        height:58px;
+        padding:0 16px;
+    }
+
+    .nav-links{
+        display:none;
+
+        position:absolute;
+
+        top:68px;
+        left:0;
+
+        width:100%;
+
+        padding:18px;
+
+        background:white;
+
+        border-radius:15px;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+        box-shadow:0 15px 30px rgba(20,50,90,.12);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:4px 0;
+        width:100%;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .container{
+        width:calc(100% - 35px);
+    }
+
+    .hero{
+        padding-top:85px;
+        min-height:auto;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+        text-align:center;
+    }
+
+    .hero-content{
+        padding:20px 0 0;
+    }
+
+    .welcome{
+        justify-content:center;
+    }
+
+    .welcome::before{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:54px;
+        letter-spacing:-2px;
+    }
+
+    .hero-description{
+        margin:auto;
+    }
+
+    .socials{
+        justify-content:center;
+    }
+
+    .hero-photo{
+        height:350px;
+        margin-top:0;
+    }
+
+    .photo-circle{
+        width:300px;
+        height:300px;
+    }
+
+    .ring1{
+        width:335px;
+        height:335px;
+    }
+
+    .ring2{
+        width:365px;
+        height:365px;
+    }
+
+    .ring3{
+        width:385px;
+        height:385px;
+    }
+
+    .skills{
+        grid-template-columns:1fr;
+    }
+
+    .pathway{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .quote{
+        grid-column:span 2;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat:nth-child(2){
+        border-right:0;
+    }
+
+    .stat:nth-child(-n+2){
+        border-bottom:1px solid rgba(255,255,255,.15);
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* =========================================================
+   FINAL MOBILE OPTIMIZATION
+   THIS IS THE IMPORTANT PART
+========================================================= */
+
+@media(max-width:560px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .navbar{
+        top:8px;
+
+        height:54px;
+
+        width:calc(100% - 20px);
+
+        border-radius:17px;
+
+        padding:0 13px;
+    }
+
+    .logo{
+        font-size:11px;
+        gap:8px;
+    }
+
+    .logo-mark{
+        width:34px;
+        height:34px;
+
+        font-size:11px;
+    }
+
+    .menu-btn{
+        width:38px;
+        height:38px;
+
+        font-size:19px;
+    }
+
+
+    /* HERO MUCH SHORTER */
+
+    .hero{
+        padding-top:72px;
+
+        border-radius:0 0 25px 25px;
+
+        min-height:auto;
+
+        padding-bottom:18px;
+    }
+
+    .hero::before{
+        width:380px;
+        height:380px;
+
+        right:-220px;
+        top:60px;
+    }
+
+    .container{
+        width:calc(100% - 28px);
+    }
+
+    .hero-grid{
+        display:flex;
+
+        flex-direction:column;
+
+        gap:8px;
+
+        min-height:auto;
+    }
+
+
+    /* NAME */
+
+    .hero-content{
+        padding:8px 0 0;
+    }
+
+    .welcome{
+        font-size:8px;
+
+        letter-spacing:1.5px;
+
+        margin-bottom:8px;
+    }
+
+    .hero h1{
+        font-size:42px;
+
+        line-height:.88;
+
+        letter-spacing:-1.8px;
+
+        margin-bottom:11px;
+    }
+
+
+    /* DESIGNATION SMALL */
+
+    .designation{
+        font-size:9px;
+
+        line-height:1.55;
+
+        letter-spacing:1.5px;
+    }
+
+
+    .hero-line{
+        width:38px;
+
+        height:2px;
+
+        margin:10px auto;
+    }
+
+
+    /* DESCRIPTION SMALL */
+
+    .hero-description{
+        max-width:330px;
+
+        font-size:9px;
+
+        line-height:1.55;
+
+        padding:0 5px;
+    }
+
+
+    /* SOCIAL SMALL */
+
+    .socials{
+        gap:9px;
+
+        margin-top:10px;
+    }
+
+    .socials a{
+        width:38px;
+        height:38px;
+
+        font-size:14px;
+    }
+
+
+    /* PHOTO SMALL */
+
+    .hero-photo{
+        height:190px;
+
+        margin-top:2px;
+
+        width:100%;
+    }
+
+    .photo-circle{
+        width:175px;
+        height:175px;
+
+        border-width:6px;
+    }
+
+    .ring1{
+        width:200px;
+        height:200px;
+    }
+
+    .ring2{
+        width:220px;
+        height:220px;
+    }
+
+    .ring3{
+        width:235px;
+        height:235px;
+
+        border-width:2px;
+    }
+
+
+    /* =====================================================
+       IMPORTANT:
+       BUTTONS COME BEFORE THE LARGE SKILL CARDS
+    ===================================================== */
+
+    .dark-section{
+        padding:15px 0 35px;
+    }
+
+    .dark-section .container{
+        display:flex;
+
+        flex-direction:column;
+    }
+
+
+    /* BUTTONS FIRST */
+
+    .pathway{
+        order:1;
+
+        margin-top:0;
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:8px;
+
+        width:100%;
+    }
+
+    .path{
+        min-height:55px;
+
+        padding:8px 9px;
+
+        border-radius:13px;
+
+        box-shadow:0 5px 15px rgba(0,0,0,.10);
+    }
+
+    .path-left{
+        gap:7px;
+    }
+
+    .path-icon{
+        width:31px;
+        height:31px;
+
+        font-size:13px;
+
+        flex-shrink:0;
+    }
+
+    .path h3{
+        font-size:8px;
+
+        line-height:1.25;
+    }
+
+    .path-arrow{
+        width:21px;
+        height:21px;
+
+        font-size:13px;
+
+        flex-shrink:0;
+    }
+
+
+    /* QUOTE */
+
+    .quote{
+        grid-column:span 2;
+
+        min-height:55px;
+
+        padding:10px 12px;
+
+        font-size:8px;
+
+        line-height:1.45;
+    }
+
+    .quote-mark{
+        font-size:28px;
+
+        margin-right:7px;
+    }
+
+
+    /* SKILLS AFTER BUTTONS */
+
+    .section-top{
+        order:2;
+
+        margin-top:30px;
+
+        margin-bottom:15px;
+
+        gap:10px;
+    }
+
+    .section-top h2{
+        font-size:8px;
+    }
+
+    .section-note{
+        font-size:7px;
+    }
+
+    .skills{
+        order:3;
+
+        gap:10px;
+    }
+
+    .skill-card{
+        min-height:170px;
+
+        padding:18px 15px;
+
+        border-radius:15px;
+    }
+
+    .skill-icon{
+        width:45px;
+        height:45px;
+
+        margin-bottom:13px;
+
+        font-size:17px;
+    }
+
+    .skill-card h3{
+        font-size:10px;
+
+        margin-bottom:9px;
+    }
+
+    .skill-card p{
+        font-size:8px;
+
+        line-height:1.65;
+
+        max-width:260px;
+    }
+
+    .skill-line{
+        width:18px;
+
+        height:2px;
+
+        margin:15px auto 0;
+    }
+
+
+    /* STATS */
+
+    .stats{
+        order:4;
+
+        margin-top:15px;
+
+        border-radius:15px;
+    }
+
+    .stat{
+        padding:17px 7px;
+
+        min-height:80px;
+    }
+
+    .stat-number{
+        font-size:24px;
+
+        margin-bottom:3px;
+    }
+
+    .stat-label{
+        font-size:7px;
+
+        line-height:1.4;
+    }
+
+
+    /* OTHER SECTIONS */
+
+    .inner-section{
+        padding:55px 0;
+    }
+
+    .section-heading-small{
+        font-size:8px;
+    }
+
+    .inner-section h2{
+        font-size:28px;
+
+        letter-spacing:-1px;
+    }
+
+    .content-text{
+        font-size:10px;
+
+        line-height:1.7;
+    }
+
+    .info-grid{
+        margin-top:20px;
+
+        gap:9px;
+    }
+
+    .info-box{
+        padding:15px;
+
+        border-radius:13px;
+    }
+
+    .info-box small{
+        font-size:7px;
+    }
+
+    .info-box strong{
+        font-size:10px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-section{
+        padding:55px 0;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+
+        gap:8px;
+
+        margin-top:20px;
+    }
+
+    .gallery-item{
+        height:150px;
+
+        border-radius:12px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-section{
+        padding:55px 0;
+    }
+
+    .contact-grid{
+        margin-top:20px;
+
+        gap:12px;
+    }
+
+    .contact-card{
+        padding:18px;
+
+        border-radius:14px;
+    }
+
+    .contact-item{
+        gap:10px;
+
+        margin-bottom:13px;
+    }
+
+    .contact-icon{
+        width:36px;
+        height:36px;
+
+        border-radius:10px;
+    }
+
+    .contact-item small{
+        font-size:7px;
+    }
+
+    .contact-item strong{
+        font-size:9px;
+    }
+
+
+    footer{
+        padding:18px;
+
+        font-size:7px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media(max-width:380px){
+
+    .hero h1{
+        font-size:37px;
+    }
+
+    .designation{
+        font-size:8px;
+
+        letter-spacing:1.2px;
+    }
+
+    .hero-description{
+        font-size:8px;
+    }
+
+    .hero-photo{
+        height:175px;
+    }
+
+    .photo-circle{
+        width:160px;
+        height:160px;
+    }
+
+    .ring1{
+        width:182px;
+        height:182px;
+    }
+
+    .ring2{
+        width:200px;
+        height:200px;
+    }
+
+    .ring3{
+        width:215px;
+        height:215px;
+    }
+
+    .path{
+        min-height:52px;
+    }
+
+    .path h3{
+        font-size:7px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+
+        <div class="logo-mark">
+            PH
+        </div>
+
+        <div>
+            PARVES <span>HIRA</span>
+        </div>
+
+    </a>
+
+
+    <nav class="nav-links" id="navLinks">
+
+        <a href="#home" class="active">
+            Home
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#gallery">
+            Gallery
+        </a>
+
+        <a href="#profile">
+            Profile / CV
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+</header>
+
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+
+<div class="hero-content">
+
+<div class="welcome">
+WELCOME TO MY PORTFOLIO
+</div>
+
+
+<h1>
+PARVES<br>
+<span>HIRA</span>
+</h1>
+
+
+<div class="designation">
+
+HEAD OF SALES <strong>| MODERN TRADE</strong><br>
+
+PINNACLE FOODS SDN BHD
+
+</div>
+
+
+<div class="hero-line"></div>
+
+
+<p class="hero-description">
+
+Leading sales, developing modern trade business,
+building strong customer relationships and driving
+sustainable commercial growth.
+
+</p>
+
+
+<div class="socials">
+
+<a href="#contact">
+✉
+</a>
+
+<a href="#contact">
+in
+</a>
+
+<a href="#contact">
+◔
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- PROFILE IMAGE -->
+
+<div class="hero-photo">
+
+<div class="ring1"></div>
+
+<div class="ring2"></div>
+
+<div class="ring3"></div>
+
+<div class="photo-circle">
+
+<img
+src="https://i.postimg.cc/rFzk17QM/Screenshot-20260824-120822-Linked-In.jpg"
+alt="Parves Hira">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     MAIN DARK AREA
+====================================================== -->
+
+<section class="dark-section" id="sales">
+
+<div class="container">
+
+
+<!-- BUTTONS ARE INTENTIONALLY BEFORE SKILLS -->
+
+<div class="pathway">
+
+
+<a href="#about" class="path">
+
+<div class="path-left">
+
+<div class="path-icon">
+♙
+</div>
+
+<h3>
+ABOUT ME
+</h3>
+
+</div>
+
+<div class="path-arrow">
+›
+</div>
+
+</a>
+
+
+
+<a href="#sales" class="path">
+
+<div class="path-left">
+
+<div class="path-icon">
+▣
+</div>
+
+<h3>
+HEAD OF SALES
+</h3>
+
+</div>
+
+<div class="path-arrow">
+›
+</div>
+
+</a>
+
+
+
+<a href="#academic" class="path">
+
+<div class="path-left">
+
+<div class="path-icon">
+◇
+</div>
+
+<h3>
+ACADEMIC
+</h3>
+
+</div>
+
+<div class="path-arrow">
+›
+</div>
+
+</a>
+
+
+
+<a href="#profile" class="path">
+
+<div class="path-left">
+
+<div class="path-icon">
+▤
+</div>
+
+<h3>
+PROFILE / CV
+</h3>
+
+</div>
+
+<div class="path-arrow">
+›
+</div>
+
+</a>
+
+
+
+<a href="#contact" class="path">
+
+<div class="path-left">
+
+<div class="path-icon">
+➤
+</div>
+
+<h3>
+CONTACT
+</h3>
+
+</div>
+
+<div class="path-arrow">
+›
+</div>
+
+</a>
+
+
+
+<a href="#gallery" class="path">
+
+<div class="path-left">
+
+<div class="path-icon">
+▧
+</div>
+
+<h3>
+PORTFOLIO GALLERY
+</h3>
+
+</div>
+
+<div class="path-arrow">
+›
+</div>
+
+</a>
+
+
+
+<div class="quote">
+
+<div class="quote-mark">
+“
+</div>
+
+<div>
+Leadership, Communication,<br>
+and Excellence in Every Step.
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- WHAT I DO -->
+
+<div class="section-top">
+
+<h2>
+WHAT I DO BEST
+</h2>
+
+<div class="section-line"></div>
+
+<div class="section-note">
+Turning ideas into impact
+</div>
+
+</div>
+
+
+
+<!-- SKILLS -->
+
+<div class="skills">
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+▣
+</div>
+
+<h3>
+HEAD OF SALES
+</h3>
+
+<p>
+Leading sales strategy, commercial growth
+and high-performance business execution.
+</p>
+
+<div class="skill-line"></div>
+
+</div>
+
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+◌
+</div>
+
+<h3>
+MODERN TRADE
+</h3>
+
+<p>
+Driving modern trade development, retail
+partnerships and market opportunities.
+</p>
+
+<div class="skill-line"></div>
+
+</div>
+
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+♙
+</div>
+
+<h3>
+SALES LEADERSHIP
+</h3>
+
+<p>
+Building strong teams, customer relationships
+and sustainable business performance.
+</p>
+
+<div class="skill-line"></div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- STATS -->
+
+<div class="stats">
+
+<div class="stat">
+
+<div class="stat-number">
+15+
+</div>
+
+<div class="stat-label">
+YEARS OF<br>
+EXPERIENCE
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+100+
+</div>
+
+<div class="stat-label">
+CLIENTS &<br>
+PARTNERS
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+20+
+</div>
+
+<div class="stat-label">
+MARKETS &<br>
+PROJECTS
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+5+
+</div>
+
+<div class="stat-label">
+KEY BUSINESS<br>
+AREAS
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
+<section class="inner-section" id="about">
+
+<div class="container">
+
+<div class="section-heading-small">
+ABOUT ME
+</div>
+
+<h2>
+Professional <span>Journey</span>
+</h2>
+
+<p class="content-text">
+
+Parves Hira is a professional sales leader
+specializing in Head of Sales responsibilities,
+Modern Trade business development, customer
+relationship management and commercial growth.
+
+</p>
+
+
+<div class="info-grid">
+
+<div class="info-box">
+
+<small>
+FULL NAME
+</small>
+
+<strong>
+Parves Hira
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+CURRENT POSITION
+</small>
+
+<strong>
+Head of Sales
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+SPECIALIZATION
+</small>
+
+<strong>
+Modern Trade
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+COMPANY
+</small>
+
+<strong>
+Pinnacle Foods Sdn Bhd
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     ACADEMIC
+====================================================== -->
+
+<section class="inner-section" id="academic">
+
+<div class="container">
+
+<div class="section-heading-small">
+ACADEMIC
+</div>
+
+<h2>
+Academic <span>Background</span>
+</h2>
+
+<p class="content-text">
+
+Academic qualifications, professional training
+and continuous learning are important parts
+of a successful leadership journey.
+
+</p>
+
+
+<div class="info-grid">
+
+<div class="info-box">
+
+<small>
+ACADEMIC QUALIFICATION
+</small>
+
+<strong>
+Professional Academic Background
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+PROFESSIONAL DEVELOPMENT
+</small>
+
+<strong>
+Sales & Business Leadership
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+AREA OF EXPERTISE
+</small>
+
+<strong>
+Modern Trade & Sales Management
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+CAREER FOCUS
+</small>
+
+<strong>
+Business Growth & Leadership
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     PROFILE / CV
+====================================================== -->
+
+<section class="inner-section" id="profile">
+
+<div class="container">
+
+<div class="section-heading-small">
+PROFILE / CV
+</div>
+
+<h2>
+Professional <span>Profile</span>
+</h2>
+
+<p class="content-text">
+
+<strong>
+Parves Hira
+</strong><br><br>
+
+Head of Sales | Modern Trade |
+Pinnacle Foods Sdn Bhd
+
+</p>
+
+
+<div class="info-grid">
+
+<div class="info-box">
+
+<small>
+NAME
+</small>
+
+<strong>
+Parves Hira
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+DESIGNATION
+</small>
+
+<strong>
+Head of Sales
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+BUSINESS AREA
+</small>
+
+<strong>
+Modern Trade
+</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<small>
+ORGANIZATION
+</small>
+
+<strong>
+Pinnacle Foods Sdn Bhd
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     GALLERY
+====================================================== -->
+
+<section class="gallery-section" id="gallery">
+
+<div class="container">
+
+<div class="section-heading-small">
+PORTFOLIO GALLERY
+</div>
+
+<h2>
+Professional <span>Moments</span>
+</h2>
+
+<p class="content-text">
+
+Professional activities, corporate events,
+business meetings and memorable career moments.
+
+</p>
+
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="gallery1.jpg" alt="Portfolio Gallery">
+</div>
+
+<div class="gallery-item">
+<img src="gallery2.jpg" alt="Portfolio Gallery">
+</div>
+
+<div class="gallery-item">
+<img src="gallery3.jpg" alt="Portfolio Gallery">
+</div>
+
+<div class="gallery-item">
+<img src="gallery4.jpg" alt="Portfolio Gallery">
+</div>
+
+<div class="gallery-item">
+<img src="gallery5.jpg" alt="Portfolio Gallery">
+</div>
+
+<div class="gallery-item">
+<img src="gallery6.jpg" alt="Portfolio Gallery">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section class="contact-section" id="contact">
+
+<div class="container">
+
+<div class="section-heading-small">
+CONTACT
+</div>
+
+<h2>
+Let's <span>Connect</span>
+</h2>
+
+<p class="content-text">
+
+For professional communication, business
+collaboration and networking opportunities.
+
+</p>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<div class="contact-item">
+
+<div class="contact-icon">
+✉
+</div>
+
+<div>
+
+<small>
+EMAIL
+</small>
+
+<strong>
+your-email@example.com
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+☎
+</div>
+
+<div>
+
+<small>
+PHONE
+</small>
+
+<strong>
++60 XXX XXX XXXX
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+▣
+</div>
+
+<div>
+
+<small>
+COMPANY
+</small>
+
+<strong>
+Pinnacle Foods Sdn Bhd
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3 style="margin-bottom:15px;">
+Professional Contact
+</h3>
+
+<p class="content-text">
+
+For business inquiries, sales collaboration
+and professional networking, please get in touch.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+© 2026
+<strong>Parves Hira</strong>
+|
+Head of Sales | Modern Trade |
+Pinnacle Foods Sdn Bhd
+
+</footer>
+
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click",function(){
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+window.addEventListener("scroll",function(){
+
+    const sections =
+    document.querySelectorAll("section[id]");
+
+    const navItems =
+    document.querySelectorAll(".nav-links a");
+
+    let current = "";
+
+    sections.forEach(function(section){
+
+        const top =
+        section.offsetTop - 150;
+
+        if(window.scrollY >= top){
+
+            current =
+            section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navItems.forEach(function(item){
+
+        item.classList.remove("active");
+
+        if(
+            item.getAttribute("href")
+            === "#" + current
+        ){
+
+            item.classList.add("active");
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
