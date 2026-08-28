@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Me | Nusrat Nasrin</title>
+<title>NUSRAT NASRIN | ABOUT ME</title>
 
 <meta name="description"
 content="About Nusrat Nasrin — Agriculturist, Aquaculturist, Researcher and Head of Marketing.">
@@ -49,34 +49,24 @@ a{
     --muted:#65738a;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* ================= NAVBAR ================= */
 
 .navbar{
     position:fixed;
     top:14px;
     left:50%;
     transform:translateX(-50%);
-
     width:calc(100% - 28px);
     max-width:1180px;
-
     height:62px;
-
     background:rgba(255,255,255,.97);
     backdrop-filter:blur(15px);
-
     border-radius:18px;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     padding:0 25px;
-
     z-index:9999;
-
     box-shadow:0 12px 35px rgba(10,45,90,.12);
 }
 
@@ -84,7 +74,6 @@ a{
     display:flex;
     align-items:center;
     gap:11px;
-
     font-size:14px;
     font-weight:800;
     color:#193253;
@@ -93,16 +82,12 @@ a{
 .logo-mark{
     width:38px;
     height:38px;
-
     border-radius:50%;
-
     background:#fff;
     border:1px solid #d8e5f6;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     color:#174e9b;
     font-size:12px;
     font-weight:800;
@@ -122,10 +107,8 @@ a{
     font-size:11px;
     font-weight:600;
     color:#243553;
-
     position:relative;
     padding:23px 0;
-
     transition:.3s;
 }
 
@@ -139,54 +122,38 @@ a{
 
 .nav-links a.active::after{
     content:"";
-
     position:absolute;
-
     bottom:0;
     left:50%;
-
     transform:translateX(-50%);
-
     width:34px;
     height:3px;
-
     background:#1769d5;
-
     border-radius:10px;
 }
 
 .menu-btn{
     display:none;
-
     width:40px;
     height:40px;
-
     border:0;
     border-radius:10px;
-
     background:#edf5ff;
-
     color:#1769d5;
-
     font-size:20px;
-
-    cursor:pointer;
 }
 
-/* =========================
-   HERO
-========================= */
+/* ================= HERO ================= */
 
 .hero{
-    min-height:480px;
-
-    padding-top:145px;
-    padding-bottom:80px;
+    min-height:390px;
+    padding-top:130px;
+    padding-bottom:75px;
 
     background:
         radial-gradient(
-            circle at 85% 30%,
-            rgba(45,131,246,.10),
+            circle at 85% 25%,
+            rgba(45,131,246,.12),
             transparent 32%
         ),
         linear-gradient(
@@ -203,19 +170,13 @@ a{
 
 .hero::before{
     content:"";
-
     position:absolute;
-
     width:520px;
     height:520px;
-
     border-radius:50%;
-
     background:#edf5ff;
-
     right:-220px;
-    top:-100px;
-
+    top:-150px;
     opacity:.75;
 }
 
@@ -223,207 +184,52 @@ a{
     width:calc(100% - 70px);
     max-width:1120px;
     margin:auto;
-
     position:relative;
     z-index:2;
 }
 
 .hero-content{
-    max-width:850px;
+    max-width:780px;
 }
 
-.small-title{
-    display:flex;
-    align-items:center;
-    gap:12px;
-
-    color:#4c5d76;
-
+.hero-small{
+    color:#1b68c8;
     font-size:10px;
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
-    margin-bottom:20px;
-}
-
-.small-title::before{
-    content:"";
-
-    width:28px;
-    height:2px;
-
-    background:#1769d5;
+    letter-spacing:3px;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .hero h1{
-    font-size:clamp(48px,6vw,72px);
-
+    font-size:clamp(45px,6vw,72px);
     line-height:.95;
-
     letter-spacing:-3px;
-
     font-weight:900;
-
     color:#071b3a;
-
-    margin-bottom:22px;
+    margin-bottom:18px;
 }
 
 .hero h1 span{
-    color:#1769d5;
+    color:#185eb9;
 }
 
-.hero-description{
-    max-width:760px;
+.hero-line{
+    width:60px;
+    height:3px;
+    background:#1769d5;
+    margin:20px 0;
+}
 
+.hero p{
+    max-width:700px;
     color:#65738a;
-
     font-size:13px;
-
     line-height:1.9;
 }
 
-/* =========================
-   MAIN ABOUT
-========================= */
+/* ================= MAIN CONTENT ================= */
 
-.about-section{
-    background:#f5f9ff;
-
-    padding:85px 0;
-}
-
-.section-label{
-    color:#1769d5;
-
-    font-size:10px;
-
-    letter-spacing:2px;
-
-    font-weight:800;
-
-    margin-bottom:10px;
-}
-
-.section-title{
-    font-size:38px;
-
-    letter-spacing:-1.5px;
-
-    color:#10213f;
-
-    margin-bottom:20px;
-}
-
-.section-title span{
-    color:#1769d5;
-}
-
-.story{
-    background:#ffffff;
-
-    border:1px solid #e0eaf5;
-
-    border-radius:22px;
-
-    padding:35px;
-
-    box-shadow:0 12px 35px rgba(30,65,110,.07);
-
-    margin-bottom:25px;
-}
-
-.story p{
-    color:#65738a;
-
-    font-size:13px;
-
-    line-height:2;
-
-    margin-bottom:18px;
-}
-
-.story p:last-child{
-    margin-bottom:0;
-}
-
-/* =========================
-   JOURNEY CARDS
-========================= */
-
-.journey-grid{
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:18px;
-
-    margin-top:30px;
-}
-
-.journey-card{
-    background:#ffffff;
-
-    border:1px solid #e0eaf5;
-
-    border-radius:20px;
-
-    padding:27px;
-
-    box-shadow:0 10px 28px rgba(30,65,110,.06);
-
-    transition:.3s;
-}
-
-.journey-card:hover{
-    transform:translateY(-5px);
-
-    box-shadow:0 16px 35px rgba(30,65,110,.11);
-}
-
-.journey-number{
-    width:44px;
-    height:44px;
-
-    border-radius:50%;
-
-    background:linear-gradient(145deg,#1c63bc,#0d438e);
-
-    color:white;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    font-size:12px;
-    font-weight:800;
-
-    margin-bottom:18px;
-}
-
-.journey-card h3{
-    color:#142542;
-
-    font-size:15px;
-
-    margin-bottom:12px;
-}
-
-.journey-card p{
-    color:#65738a;
-
-    font-size:11px;
-
-    line-height:1.85;
-}
-
-/* =========================
-   BAU / AGRICULTURIST
-========================= */
-
-.dark-section{
+.main{
     background:
         radial-gradient(
             circle at 50% 0%,
@@ -432,408 +238,352 @@ a{
         ),
         #071b3a;
 
-    color:white;
-
-    padding:85px 0;
+    padding:75px 0 90px;
 }
 
-.dark-title{
-    color:#ffffff;
-
-    font-size:38px;
-
-    letter-spacing:-1.5px;
-
-    margin-bottom:20px;
-}
-
-.dark-title span{
-    color:#5da0ff;
-}
-
-.dark-text{
-    color:#b8c7dc;
-
-    font-size:13px;
-
-    line-height:1.95;
-
-    max-width:850px;
-
-    margin-bottom:25px;
-}
-
-.dark-card-grid{
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:17px;
-
-    margin-top:30px;
-}
-
-.dark-card{
-    background:rgba(255,255,255,.97);
-
-    color:#142542;
-
-    border-radius:19px;
-
-    padding:27px;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
-}
-
-.dark-card h3{
-    font-size:14px;
-
-    margin-bottom:12px;
-
-    color:#123d78;
-}
-
-.dark-card p{
-    color:#65738a;
-
-    font-size:11px;
-
-    line-height:1.85;
-}
-
-/* =========================
-   UPM RESEARCH
-========================= */
-
-.upm-section{
-    background:#ffffff;
-
-    padding:85px 0;
-}
-
-.upm-box{
-    margin-top:30px;
-
-    background:#f5f9ff;
-
-    border:1px solid #dfe9f4;
-
-    border-radius:22px;
-
-    padding:35px;
-
-    box-shadow:0 10px 28px rgba(30,65,110,.06);
-}
-
-.upm-box h3{
-    color:#123d78;
-
-    font-size:18px;
-
-    margin-bottom:16px;
-}
-
-.upm-box p{
-    color:#65738a;
-
-    font-size:12px;
-
-    line-height:1.95;
-
-    margin-bottom:17px;
-}
-
-.research-grid{
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:15px;
-
-    margin-top:25px;
-}
-
-.research-item{
-    background:#ffffff;
-
-    border:1px solid #e0eaf5;
-
-    border-radius:16px;
-
-    padding:22px;
-}
-
-.research-item h4{
-    color:#1769d5;
-
-    font-size:12px;
-
-    margin-bottom:9px;
-}
-
-.research-item p{
-    color:#65738a;
-
+.section-label{
+    color:#75aef1;
     font-size:10px;
-
-    line-height:1.7;
-}
-
-/* =========================
-   CAMPUS LIFE
-========================= */
-
-.campus-section{
-    background:#f5f9ff;
-
-    padding:85px 0;
-}
-
-.campus-grid{
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:15px;
-
-    margin-top:30px;
-}
-
-.campus-card{
-    background:#ffffff;
-
-    border-radius:18px;
-
-    border:1px solid #e1eaf5;
-
-    padding:25px;
-
-    box-shadow:0 8px 22px rgba(30,65,110,.05);
-}
-
-.campus-card h3{
-    font-size:13px;
-
-    color:#173d73;
-
+    letter-spacing:2.5px;
+    font-weight:800;
     margin-bottom:10px;
 }
 
-.campus-card p{
-    color:#65738a;
-
-    font-size:10px;
-
-    line-height:1.8;
+.section-title{
+    color:#fff;
+    font-size:38px;
+    letter-spacing:-1.5px;
+    margin-bottom:20px;
 }
 
-/* =========================
-   SUPPORTING PARTNER
-========================= */
-
-.partner-section{
-    padding:90px 0;
-
-    background:#ffffff;
+.section-title span{
+    color:#5fa0ed;
 }
 
-.partner-card{
-    margin-top:30px;
-
-    position:relative;
-
-    overflow:hidden;
-
-    background:
-        radial-gradient(
-            circle at 100% 0%,
-            rgba(45,131,246,.16),
-            transparent 35%
-        ),
-        linear-gradient(
-            145deg,
-            #071b3a,
-            #0a2855
-        );
-
-    border-radius:25px;
-
-    padding:40px;
-
-    color:white;
-
-    box-shadow:0 20px 45px rgba(7,27,58,.20);
+.intro{
+    color:#d5dfed;
+    font-size:13px;
+    line-height:1.95;
+    max-width:850px;
+    margin-bottom:40px;
 }
 
-.partner-label{
-    display:inline-block;
+/* ================= STORY CARDS ================= */
 
-    padding:7px 13px;
+.story-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
 
+.story-card{
+    background:#fff;
     border-radius:20px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.14);
+}
 
-    background:rgba(255,255,255,.10);
+.story-card.full{
+    grid-column:span 2;
+}
 
-    border:1px solid rgba(255,255,255,.18);
-
-    color:#a9c9f5;
-
-    font-size:9px;
-
-    letter-spacing:1.8px;
-
-    font-weight:800;
-
+.story-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#1c63bc,#0d438e);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
     margin-bottom:18px;
 }
 
-.partner-card h3{
-    font-size:30px;
+.story-card h3{
+    color:#10213f;
+    font-size:18px;
+    margin-bottom:14px;
+}
 
-    letter-spacing:-1px;
+.story-card p{
+    color:#65738a;
+    font-size:12px;
+    line-height:1.9;
+}
 
+/* ================= TIMELINE ================= */
+
+.timeline-section{
+    margin-top:60px;
+}
+
+.timeline{
+    margin-top:30px;
+    display:grid;
+    gap:15px;
+}
+
+.timeline-item{
+    display:grid;
+    grid-template-columns:130px 1fr;
+    gap:20px;
+    align-items:start;
+}
+
+.timeline-year{
+    color:#fff;
+    font-size:16px;
+    font-weight:800;
+    background:#0b2b5a;
+    border:1px solid rgba(110,165,235,.25);
+    padding:15px;
+    border-radius:14px;
+    text-align:center;
+}
+
+.timeline-content{
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+}
+
+.timeline-content h4{
+    color:#172a48;
+    font-size:14px;
+    margin-bottom:7px;
+}
+
+.timeline-content p{
+    color:#65738a;
+    font-size:11px;
+    line-height:1.8;
+}
+
+/* ================= EDUCATION ================= */
+
+.education{
+    margin-top:65px;
+}
+
+.education-grid{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.edu-card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.edu-card small{
+    color:#1769d5;
+    font-size:9px;
+    letter-spacing:1.5px;
+    font-weight:800;
+}
+
+.edu-card h3{
+    color:#172a48;
+    font-size:15px;
+    margin:10px 0;
+}
+
+.edu-card p{
+    color:#65738a;
+    font-size:11px;
+    line-height:1.7;
+}
+
+/* ================= SUPPORTING PARTNER ================= */
+
+.partner-section{
+    margin-top:65px;
+}
+
+.partner-card{
+    position:relative;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f1f7ff 100%
+        );
+
+    border-radius:24px;
+    padding:40px;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    border:1px solid rgba(255,255,255,.5);
+}
+
+.partner-card::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:#e4f0ff;
+    right:-100px;
+    top:-100px;
+}
+
+.partner-content{
+    position:relative;
+    z-index:2;
+}
+
+.partner-badge{
+    display:inline-block;
+    padding:7px 13px;
+    border-radius:30px;
+    background:#e8f2ff;
+    color:#1769d5;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    margin-bottom:14px;
+}
+
+.partner-card h2{
+    font-size:34px;
+    color:#071b3a;
     margin-bottom:15px;
 }
 
+.partner-card h2 span{
+    color:#1769d5;
+}
+
 .partner-card p{
-    color:#c2d0e2;
-
+    max-width:820px;
+    color:#65738a;
     font-size:12px;
-
     line-height:1.9;
-
-    max-width:800px;
-
-    margin-bottom:25px;
 }
 
 .partner-button{
     display:inline-flex;
-
     align-items:center;
+    justify-content:center;
+    margin-top:25px;
 
-    gap:10px;
-
-    padding:13px 20px;
+    padding:13px 22px;
 
     border-radius:12px;
 
-    background:#ffffff;
+    background:linear-gradient(
+        135deg,
+        #1769d5,
+        #0b438e
+    );
 
-    color:#123d78;
+    color:#fff;
 
-    font-size:10px;
-
+    font-size:11px;
     font-weight:800;
-
     letter-spacing:.5px;
+
+    box-shadow:0 8px 20px rgba(23,105,213,.25);
 
     transition:.3s;
 }
 
 .partner-button:hover{
     transform:translateY(-3px);
-
-    background:#eaf3ff;
+    box-shadow:0 12px 25px rgba(23,105,213,.35);
 }
 
-/* =========================
-   FINAL MESSAGE
-========================= */
+/* ================= VALUES ================= */
 
-.final-section{
-    background:#f5f9ff;
-
-    padding:80px 0;
+.values{
+    margin-top:65px;
 }
 
-.final-box{
+.values-grid{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+.value{
+    background:#fff;
+    border-radius:17px;
+    padding:24px 18px;
     text-align:center;
-
-    max-width:800px;
-
-    margin:auto;
 }
 
-.final-box h2{
-    color:#10213f;
-
-    font-size:30px;
-
-    margin-bottom:15px;
-}
-
-.final-box h2 span{
+.value-icon{
+    width:48px;
+    height:48px;
+    margin:0 auto 13px;
+    border-radius:50%;
+    background:#eaf3ff;
     color:#1769d5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
 }
 
-.final-box p{
-    color:#65738a;
-
+.value h4{
+    color:#172a48;
     font-size:12px;
-
-    line-height:1.9;
+    margin-bottom:8px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.value p{
+    color:#65738a;
+    font-size:9px;
+    line-height:1.6;
+}
+
+/* ================= FOOTER ================= */
 
 footer{
     background:#061731;
-
     color:#9aacc4;
-
     text-align:center;
-
     padding:25px;
-
     font-size:10px;
 }
 
 footer strong{
-    color:white;
+    color:#fff;
 }
 
-/* =========================
-   TABLET
-========================= */
+/* ================= TABLET ================= */
 
 @media(max-width:900px){
 
     .navbar{
         width:calc(100% - 20px);
-
         top:10px;
-
         height:58px;
-
         padding:0 16px;
     }
 
     .nav-links{
         display:none;
-
         position:absolute;
-
         top:68px;
-
         left:0;
-
         width:100%;
-
         padding:18px;
-
-        background:white;
-
+        background:#fff;
         border-radius:15px;
-
         flex-direction:column;
-
         align-items:flex-start;
-
         gap:15px;
-
         box-shadow:0 15px 30px rgba(20,50,90,.12);
     }
 
@@ -843,7 +593,6 @@ footer strong{
 
     .nav-links a{
         padding:4px 0;
-
         width:100%;
     }
 
@@ -855,232 +604,249 @@ footer strong{
         width:calc(100% - 35px);
     }
 
-    .journey-grid,
-    .dark-card-grid{
+    .story-grid{
         grid-template-columns:1fr;
     }
 
-    .research-grid{
-        grid-template-columns:1fr 1fr;
+    .story-card.full{
+        grid-column:span 1;
     }
 
-    .campus-grid{
-        grid-template-columns:1fr 1fr;
+    .education-grid{
+        grid-template-columns:1fr;
     }
+
+    .values-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ================= MOBILE ================= */
 
 @media(max-width:560px){
 
     .navbar{
         top:8px;
-
         height:54px;
-
         width:calc(100% - 20px);
-
         border-radius:17px;
-
         padding:0 13px;
     }
 
     .logo{
         font-size:11px;
-
         gap:8px;
     }
 
     .logo-mark{
         width:34px;
         height:34px;
-
         font-size:11px;
     }
 
     .menu-btn{
         width:38px;
         height:38px;
-
         font-size:19px;
+    }
+
+    .hero{
+        padding-top:100px;
+        padding-bottom:50px;
+        border-radius:0 0 25px 25px;
     }
 
     .container{
         width:calc(100% - 28px);
     }
 
-    .hero{
-        padding-top:105px;
-
-        padding-bottom:55px;
-
-        border-radius:0 0 25px 25px;
-    }
-
-    .hero::before{
-        width:380px;
-        height:380px;
-
-        right:-220px;
-        top:40px;
-    }
-
-    .small-title{
+    .hero-small{
         font-size:8px;
-
-        letter-spacing:1.5px;
-
-        margin-bottom:13px;
+        letter-spacing:2px;
     }
 
     .hero h1{
-        font-size:42px;
-
-        letter-spacing:-1.8px;
-
-        line-height:.9;
-
-        margin-bottom:16px;
+        font-size:40px;
+        letter-spacing:-2px;
     }
 
-    .hero-description{
+    .hero p{
         font-size:10px;
-
         line-height:1.7;
     }
 
-    .about-section,
-    .dark-section,
-    .upm-section,
-    .campus-section,
-    .partner-section,
-    .final-section{
-        padding:55px 0;
+    .main{
+        padding:50px 0 55px;
     }
 
-    .section-title,
-    .dark-title{
-        font-size:29px;
+    .section-label{
+        font-size:8px;
+    }
 
+    .section-title{
+        font-size:28px;
         letter-spacing:-1px;
     }
 
-    .story{
-        padding:20px;
-
-        border-radius:16px;
-    }
-
-    .story p{
+    .intro{
         font-size:10px;
-
-        line-height:1.8;
-
-        margin-bottom:14px;
+        line-height:1.75;
     }
 
-    .journey-grid,
-    .dark-card-grid,
-    .research-grid,
-    .campus-grid{
-        grid-template-columns:1fr;
-
+    .story-grid{
         gap:10px;
     }
 
-    .journey-card,
-    .dark-card,
-    .research-item,
-    .campus-card{
-        padding:19px;
-
-        border-radius:14px;
+    .story-card{
+        padding:20px 17px;
+        border-radius:15px;
     }
 
-    .journey-card h3,
-    .dark-card h3{
-        font-size:12px;
+    .story-icon{
+        width:43px;
+        height:43px;
+        font-size:17px;
+        margin-bottom:12px;
     }
 
-    .journey-card p,
-    .dark-card p,
-    .campus-card p{
+    .story-card h3{
+        font-size:13px;
+        margin-bottom:9px;
+    }
+
+    .story-card p{
         font-size:9px;
-
         line-height:1.7;
     }
 
-    .dark-text{
+    .timeline-section,
+    .education,
+    .partner-section,
+    .values{
+        margin-top:45px;
+    }
+
+    .timeline{
+        gap:10px;
+    }
+
+    .timeline-item{
+        grid-template-columns:75px 1fr;
+        gap:8px;
+    }
+
+    .timeline-year{
         font-size:10px;
-
-        line-height:1.8;
+        padding:12px 5px;
+        border-radius:10px;
     }
 
-    .upm-box{
-        padding:21px;
-
-        border-radius:16px;
+    .timeline-content{
+        padding:14px;
+        border-radius:12px;
     }
 
-    .upm-box h3{
-        font-size:14px;
-    }
-
-    .upm-box p{
-        font-size:10px;
-
-        line-height:1.8;
-    }
-
-    .research-item h4{
+    .timeline-content h4{
         font-size:10px;
     }
 
-    .research-item p{
-        font-size:9px;
+    .timeline-content p{
+        font-size:8px;
+        line-height:1.6;
     }
 
-    .partner-card{
-        padding:25px 20px;
-
-        border-radius:18px;
+    .education-grid{
+        margin-top:20px;
+        gap:9px;
     }
 
-    .partner-label{
+    .edu-card{
+        padding:17px;
+        border-radius:13px;
+    }
+
+    .edu-card small{
         font-size:7px;
     }
 
-    .partner-card h3{
-        font-size:23px;
+    .edu-card h3{
+        font-size:11px;
+    }
+
+    .edu-card p{
+        font-size:8px;
+    }
+
+    .partner-card{
+        padding:25px 18px;
+        border-radius:18px;
+    }
+
+    .partner-badge{
+        font-size:7px;
+        padding:6px 10px;
+    }
+
+    .partner-card h2{
+        font-size:25px;
     }
 
     .partner-card p{
         font-size:9px;
-
-        line-height:1.75;
+        line-height:1.7;
     }
 
     .partner-button{
+        padding:11px 16px;
         font-size:8px;
-
-        padding:11px 15px;
+        margin-top:18px;
     }
 
-    .final-box h2{
-        font-size:24px;
+    .values-grid{
+        margin-top:20px;
+        gap:9px;
     }
 
-    .final-box p{
-        font-size:10px;
+    .value{
+        padding:17px 10px;
+        border-radius:13px;
+    }
+
+    .value-icon{
+        width:38px;
+        height:38px;
+        font-size:14px;
+    }
+
+    .value h4{
+        font-size:9px;
+    }
+
+    .value p{
+        font-size:7px;
     }
 
     footer{
         padding:18px;
-
         font-size:7px;
     }
+}
+
+@media(max-width:380px){
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .timeline-item{
+        grid-template-columns:65px 1fr;
+    }
+
+    .partner-card h2{
+        font-size:22px;
+    }
+
 }
 
 </style>
@@ -1088,9 +854,7 @@ footer strong{
 
 <body>
 
-<!-- ======================================================
-     NAVBAR
-====================================================== -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
 
@@ -1120,7 +884,7 @@ footer strong{
             Gallery
         </a>
 
-        <a href="profile.html">
+        <a href="resume.html">
             Profile / CV
         </a>
 
@@ -1137,9 +901,7 @@ footer strong{
 </header>
 
 
-<!-- ======================================================
-     HERO
-====================================================== -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
@@ -1147,19 +909,22 @@ footer strong{
 
         <div class="hero-content">
 
-            <div class="small-title">
+            <div class="hero-small">
                 ABOUT ME
             </div>
 
             <h1>
-                MY <span>JOURNEY</span>
+                The Journey of<br>
+                <span>NUSRAT NASRIN</span>
             </h1>
 
-            <p class="hero-description">
-                From a determined young girl in Jessore to an Agriculturist,
-                Aquaculturist, Researcher and Marketing professional in Malaysia —
-                this is the story of Nusrat Nasrin's academic, professional and
-                personal journey.
+            <div class="hero-line"></div>
+
+            <p>
+                An Agriculturist, Aquaculturist, Researcher and Marketing
+                professional whose journey has been shaped by curiosity,
+                discipline, leadership, academic ambition and a strong desire
+                to create meaningful impact.
             </p>
 
         </div>
@@ -1169,145 +934,347 @@ footer strong{
 </section>
 
 
-<!-- ======================================================
-     PERSONAL STORY
-====================================================== -->
+<!-- ================= MAIN ================= -->
 
-<section class="about-section">
+<main class="main">
 
-    <div class="container">
+<div class="container">
+
+    <div class="section-label">
+        MY STORY
+    </div>
+
+    <h2 class="section-title">
+        A Journey of <span>Purpose & Ambition</span>
+    </h2>
+
+    <p class="intro">
+        Nusrat Nasrin's journey is a story of determination, academic
+        excellence, family responsibility and continuous growth. From her
+        early life in Jashore to Bangladesh Agricultural University, and
+        eventually to Malaysia for higher education and research, every stage
+        of her life has contributed to the professional she is becoming today.
+    </p>
+
+
+    <!-- STORY -->
+
+    <div class="story-grid">
+
+        <div class="story-card">
+
+            <div class="story-icon">
+                ♙
+            </div>
+
+            <h3>
+                Early Life
+            </h3>
+
+            <p>
+                Nusrat Nasrin was born on 16 December 1999 in Jashore,
+                Bangladesh, and belongs to Chaugachha Upazila of Jashore
+                District. She was born into a loving family to her father,
+                Fosiyuzzaman, and mother, Aleya Khatun.
+                From childhood, Nusrat was known for her energetic,
+                courageous and determined personality. Her independent
+                nature and fearless attitude made her stand out from an
+                early age.
+            </p>
+
+        </div>
+
+
+        <div class="story-card">
+
+            <div class="story-icon">
+                ★
+            </div>
+
+            <h3>
+                A Determined Personality
+            </h3>
+
+            <p>
+                Her family saw in her a child who was exceptionally active,
+                talented and ambitious. She developed a strong sense of
+                responsibility from an early age and gradually became a
+                person her family could depend on. Her ambition has always
+                been larger than circumstances, and today she continues to
+                carry that same determination into her academic and
+                professional life.
+            </p>
+
+        </div>
+
+
+        <div class="story-card full">
+
+            <div class="story-icon">
+                ✦
+            </div>
+
+            <h3>
+                Family, Responsibility & Vision
+            </h3>
+
+            <p>
+                One of the strongest parts of Nusrat's personality is her
+                commitment to her family. She has always wanted to become
+                financially independent, support her family and build a
+                meaningful future through her own abilities. Her long-term
+                vision is to establish herself as a highly skilled researcher
+                and scientist while continuing to take responsibility for the
+                people she loves. Her journey reflects a combination of
+                academic ambition, personal courage, independence and
+                responsibility.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ACADEMIC JOURNEY -->
+
+    <div class="timeline-section">
 
         <div class="section-label">
-            PERSONAL STORY
+            ACADEMIC JOURNEY
         </div>
 
         <h2 class="section-title">
-            A Journey Built on <span>Dreams & Determination</span>
+            From <span>Bangladesh</span> to Malaysia
         </h2>
 
-        <div class="story">
+        <div class="timeline">
 
-            <p>
-                Nusrat Nasrin was born on 16 December 1999 in Jessore,
-                Bangladesh, in the Chougachha area of Jessore District.
-                On a bright and sunlit December day, her parents,
-                Fosiyuzzaman and Aleya Khatun, welcomed their daughter
-                into the world.
-            </p>
 
-            <p>
-                From childhood, Nusrat was energetic, courageous,
-                determined and exceptionally curious. Her independent
-                personality and fearless nature often made her parents
-                feel as though they had been blessed with a son.
-                She grew up with a strong sense of responsibility,
-                resilience and ambition.
-            </p>
+            <div class="timeline-item">
 
-            <p>
-                That determination gradually became one of the strongest
-                characteristics of her personality. She developed a
-                commitment not only to building her own future but also
-                to supporting and caring for the people she loves.
-                Today, that same sense of responsibility continues to
-                influence the way she approaches her family, education,
-                career and research.
-            </p>
+                <div class="timeline-year">
+                    EARLY
+                </div>
 
-            <p>
-                Nusrat's long-term ambition is to become a highly
-                accomplished researcher and scientist, develop expertise
-                in aquaculture and aquatic science, achieve higher academic
-                qualifications and contribute meaningful knowledge to
-                sustainable aquatic production and research.
-            </p>
+                <div class="timeline-content">
+
+                    <h4>
+                        School & College Education
+                    </h4>
+
+                    <p>
+                        Nusrat successfully completed her primary, secondary
+                        and higher-secondary education with strong academic
+                        performance and developed a clear interest in science,
+                        agriculture, fisheries and aquatic resources.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2018
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        Bangladesh Agricultural University
+                    </h4>
+
+                    <p>
+                        After completing her higher-secondary education,
+                        Nusrat entered Bangladesh Agricultural University.
+                        Fisheries was her first choice because of her deep
+                        interest in aquatic science and her ambition to work
+                        in research related to fisheries and aquaculture.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    BAU LIFE
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        Fisheries Faculty & Campus Life
+                    </h4>
+
+                    <p>
+                        During her university years, Nusrat became an active
+                        and familiar face within the Fisheries community.
+                        Her academic seriousness was complemented by
+                        leadership, communication, teamwork and involvement
+                        with student and cultural activities. Her hall life
+                        at Sultana Razia Hall also contributed to her
+                        discipline, friendships, teamwork and understanding
+                        of senior-junior relationships.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2024
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        Overseas Education — Malaysia
+                    </h4>
+
+                    <p>
+                        After completing her undergraduate journey in
+                        Bangladesh, Nusrat chose Malaysia for higher education.
+                        Her decision was influenced by her desire for
+                        international exposure, professional development and
+                        ultimately returning to her core interest in
+                        aquaculture research.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    MBA
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        Business & Management Education
+                    </h4>
+
+                    <p>
+                        Alongside her scientific interests, Nusrat developed
+                        a strong interest in business and management. She
+                        completed her MBA at Kuala Lumpur University of
+                        Science and Technology, strengthening her knowledge
+                        of management, communication, leadership, marketing
+                        and organizational strategy.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    UPM
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        Aquaculture Research
+                    </h4>
+
+                    <p>
+                        Following her MBA, Nusrat returned to her core
+                        scientific field and began her research journey in
+                        Aquaculture at Universiti Putra Malaysia. Her current
+                        direction focuses on aquatic science, sustainable
+                        aquaculture, research development and scientific
+                        knowledge with the long-term goal of progressing
+                        toward a PhD and establishing herself as a scientist.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
-
-        <!-- JOURNEY -->
-
-        <div class="journey-grid">
-
-            <div class="journey-card">
-
-                <div class="journey-number">
-                    01
-                </div>
-
-                <h3>
-                    Early Education
-                </h3>
-
-                <p>
-                    Her educational journey began in Bangladesh, where she
-                    successfully completed her primary, secondary and higher
-                    secondary education. Throughout her student life, she
-                    remained serious about education while maintaining an
-                    active and confident personality.
-                </p>
-
-            </div>
+    </div>
 
 
-            <div class="journey-card">
+    <!-- EDUCATION -->
 
-                <div class="journey-number">
-                    02
-                </div>
+    <div class="education">
 
-                <h3>
-                    Choosing Fisheries
-                </h3>
+        <div class="section-label">
+            EDUCATION
+        </div>
 
-                <p>
-                    After completing her school and college education,
-                    Nusrat chose Fisheries as her academic field because
-                    of her genuine interest in aquatic resources,
-                    fisheries science and the potential of aquaculture.
-                </p>
+        <h2 class="section-title">
+            Academic <span>Foundation</span>
+        </h2>
 
-            </div>
+        <div class="education-grid">
 
+            <div class="edu-card">
 
-            <div class="journey-card">
-
-                <div class="journey-number">
-                    03
-                </div>
+                <small>
+                    UNDERGRADUATE
+                </small>
 
                 <h3>
                     Bangladesh Agricultural University
                 </h3>
 
                 <p>
-                    She entered Bangladesh Agricultural University in 2018
-                    and joined the Fisheries Faculty. Her choice reflected
-                    a clear academic interest in fisheries, aquaculture and
-                    aquatic science. She successfully completed her
-                    Bachelor's degree with dedication and strong academic
-                    commitment.
+                    Fisheries / Agricultural Sciences background with a strong
+                    foundation in fisheries, aquatic science, aquaculture and
+                    related biological sciences.
                 </p>
 
             </div>
 
 
-            <div class="journey-card">
+            <div class="edu-card">
 
-                <div class="journey-number">
-                    04
-                </div>
+                <small>
+                    MASTER'S / MBA
+                </small>
 
                 <h3>
-                    Leadership & Campus Life
+                    Kuala Lumpur University of Science & Technology
                 </h3>
 
                 <p>
-                    University life developed her leadership, teamwork,
-                    communication and organizational abilities. She was
-                    actively involved in student and cultural activities,
-                    took leadership responsibilities and built strong
-                    relationships with classmates, seniors and juniors.
+                    MBA studies focused on management, business, leadership,
+                    communication, marketing and organizational development.
+                </p>
+
+            </div>
+
+
+            <div class="edu-card">
+
+                <small>
+                    CURRENT RESEARCH
+                </small>
+
+                <h3>
+                    Universiti Putra Malaysia
+                </h3>
+
+                <p>
+                    Aquaculture research with an emphasis on sustainable
+                    aquatic innovation, scientific development and future
+                    research publication.
                 </p>
 
             </div>
@@ -1316,556 +1283,173 @@ footer strong{
 
     </div>
 
-</section>
 
+    <!-- SUPPORTING PARTNER -->
 
-<!-- ======================================================
-     AGRICULTURIST / BAU
-====================================================== -->
-
-<section class="dark-section">
-
-    <div class="container">
-
-        <div class="section-label" style="color:#72aaff;">
-            AGRICULTURIST
-        </div>
-
-        <h2 class="dark-title">
-            Bangladesh Agricultural <span>University</span>
-        </h2>
-
-        <p class="dark-text">
-            Bangladesh Agricultural University became one of the most
-            important foundations of Nusrat's academic and professional
-            identity. Her decision to study Fisheries was driven by a
-            genuine interest in aquatic resources and the desire to
-            eventually work in research and sustainable aquaculture.
-        </p>
-
-        <p class="dark-text">
-            Her university years were not limited to classroom learning.
-            They helped her develop scientific thinking, discipline,
-            communication, leadership, teamwork and the confidence to
-            work with people from different backgrounds.
-        </p>
-
-
-        <div class="dark-card-grid">
-
-            <div class="dark-card">
-
-                <h3>
-                    Fisheries Faculty
-                </h3>
-
-                <p>
-                    Fisheries was her first choice because of her interest
-                    in aquatic science. The academic environment introduced
-                    her to fisheries biology, aquatic ecosystems, fish
-                    production, aquaculture, aquatic resource management,
-                    fisheries economics and the scientific principles
-                    behind sustainable aquatic production.
-                </p>
-
-            </div>
-
-
-            <div class="dark-card">
-
-                <h3>
-                    Academic Discipline
-                </h3>
-
-                <p>
-                    Her university education strengthened her analytical
-                    ability and scientific mindset. Practical learning,
-                    laboratory exposure, field-oriented education and
-                    academic teamwork helped prepare her for future
-                    research.
-                </p>
-
-            </div>
-
-
-            <div class="dark-card">
-
-                <h3>
-                    Leadership
-                </h3>
-
-                <p>
-                    Nusrat became actively involved in university life,
-                    student organizations and cultural activities. These
-                    experiences developed her leadership, responsibility,
-                    public communication and ability to coordinate with
-                    different people.
-                </p>
-
-            </div>
-
-
-            <div class="dark-card">
-
-                <h3>
-                    Sultana Razia Hall
-                </h3>
-
-                <p>
-                    Her residential life at Sultana Razia Hall became
-                    another important part of her university journey.
-                    The experience combined friendship, study,
-                    discipline, senior-junior relationships and everyday
-                    campus memories, creating a strong sense of community
-                    and independence.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     MALAYSIA / UPM
-====================================================== -->
-
-<section class="upm-section">
-
-    <div class="container">
-
-        <div class="section-label">
-            OVERSEAS EDUCATION
-        </div>
-
-        <h2 class="section-title">
-            From Bangladesh to <span>Malaysia</span>
-        </h2>
-
-        <div class="upm-box">
-
-            <h3>
-                A New Chapter in Malaysia
-            </h3>
-
-            <p>
-                After completing her university journey in Bangladesh,
-                Nusrat chose Malaysia as the next destination for her
-                higher education and professional development. In 2024,
-                she moved to Malaysia with her spouse, Mehedi Alim Ayon,
-                with the ambition of creating a stronger future through
-                education, professional experience and research.
-            </p>
-
-            <p>
-                Although her ultimate academic goal was research in
-                aquaculture, she also had a strong interest in business
-                and management. Therefore, she decided to pursue an MBA
-                in Malaysia while keeping her long-term research ambition
-                firmly in sight.
-            </p>
-
-            <p>
-                Her MBA journey gave her exposure to business strategy,
-                management, marketing, organizational behaviour,
-                communication, leadership and decision-making. These
-                skills later became valuable in her professional career
-                as well as in her research journey.
-            </p>
-
-            <p>
-                After completing her Master's/MBA within approximately
-                one year, she moved toward her primary academic interest:
-                aquaculture research at Universiti Putra Malaysia (UPM).
-            </p>
-
-        </div>
-
-
-        <div class="research-grid">
-
-            <div class="research-item">
-
-                <h4>
-                    BUSINESS & MANAGEMENT
-                </h4>
-
-                <p>
-                    Strategic thinking, marketing, management,
-                    organizational leadership, communication and
-                    business decision-making.
-                </p>
-
-            </div>
-
-
-            <div class="research-item">
-
-                <h4>
-                    AQUACULTURE
-                </h4>
-
-                <p>
-                    Aquatic production, sustainable aquaculture,
-                    aquatic resources, fish production and modern
-                    approaches to aquatic science.
-                </p>
-
-            </div>
-
-
-            <div class="research-item">
-
-                <h4>
-                    RESEARCH MINDSET
-                </h4>
-
-                <p>
-                    Scientific observation, experimentation, analysis,
-                    academic writing and the pursuit of meaningful
-                    research outcomes.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     UPM RESEARCH
-====================================================== -->
-
-<section class="dark-section">
-
-    <div class="container">
-
-        <div class="section-label" style="color:#72aaff;">
-            AQUACULTURIST & RESEARCHER
-        </div>
-
-        <h2 class="dark-title">
-            Research at <span>UPM</span>
-        </h2>
-
-        <p class="dark-text">
-            Universiti Putra Malaysia has become the next major chapter
-            in Nusrat's academic journey. Her decision to return to her
-            core field of aquaculture reflects a clear long-term vision:
-            to develop herself as a researcher and eventually become a
-            scientist with meaningful contributions to aquatic science.
-        </p>
-
-        <p class="dark-text">
-            Her current research direction is connected with aquaculture,
-            aquatic science and sustainable aquatic innovation. She is
-            working toward developing strong research skills, preparing
-            academic work and pursuing journal publication opportunities.
-        </p>
-
-        <div class="dark-card-grid">
-
-            <div class="dark-card">
-
-                <h3>
-                    Aquaculture Research
-                </h3>
-
-                <p>
-                    Her research interest focuses on modern aquaculture,
-                    aquatic production and sustainable approaches that
-                    can contribute to the future development of aquatic
-                    food systems.
-                </p>
-
-            </div>
-
-
-            <div class="dark-card">
-
-                <h3>
-                    Microalgae & Innovation
-                </h3>
-
-                <p>
-                    Her academic interests also connect with microalgae,
-                    biotechnology and innovative aquatic applications,
-                    providing opportunities to explore new solutions
-                    within aquaculture research.
-                </p>
-
-            </div>
-
-
-            <div class="dark-card">
-
-                <h3>
-                    Scientific Development
-                </h3>
-
-                <p>
-                    Through research, laboratory work, academic discussion
-                    and scientific analysis, Nusrat is continuously
-                    developing the skills required for advanced research.
-                </p>
-
-            </div>
-
-
-            <div class="dark-card">
-
-                <h3>
-                    Future PhD Goal
-                </h3>
-
-                <p>
-                    Her long-term academic goal is to continue toward a
-                    PhD and establish herself as a professional researcher
-                    and scientist in aquaculture and aquatic science.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     CAMPUS & PERSONAL DEVELOPMENT
-====================================================== -->
-
-<section class="campus-section">
-
-    <div class="container">
-
-        <div class="section-label">
-            BEYOND THE CLASSROOM
-        </div>
-
-        <h2 class="section-title">
-            Campus Life & <span>Personal Growth</span>
-        </h2>
-
-        <div class="campus-grid">
-
-            <div class="campus-card">
-
-                <h3>
-                    Leadership
-                </h3>
-
-                <p>
-                    University organizations and leadership responsibilities
-                    helped Nusrat develop confidence, accountability and
-                    the ability to work with people.
-                </p>
-
-            </div>
-
-
-            <div class="campus-card">
-
-                <h3>
-                    Communication
-                </h3>
-
-                <p>
-                    Cultural activities, organizational involvement and
-                    interaction with different groups strengthened her
-                    communication and interpersonal skills.
-                </p>
-
-            </div>
-
-
-            <div class="campus-card">
-
-                <h3>
-                    Teamwork
-                </h3>
-
-                <p>
-                    Working with classmates, seniors, juniors and
-                    organizational teams taught her cooperation,
-                    coordination and mutual respect.
-                </p>
-
-            </div>
-
-
-            <div class="campus-card">
-
-                <h3>
-                    Discipline
-                </h3>
-
-                <p>
-                    Academic life and residential life developed her
-                    ability to balance study, responsibility, social
-                    relationships and personal goals.
-                </p>
-
-            </div>
-
-
-            <div class="campus-card">
-
-                <h3>
-                    Hard Work
-                </h3>
-
-                <p>
-                    Her academic and professional journey has been shaped
-                    by persistence, continuous learning and the willingness
-                    to work through challenges.
-                </p>
-
-            </div>
-
-
-            <div class="campus-card">
-
-                <h3>
-                    Vision
-                </h3>
-
-                <p>
-                    Every stage of her journey has been connected to one
-                    larger objective: becoming an accomplished researcher
-                    while building a meaningful and responsible life.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     SUPPORTING PARTNER
-====================================================== -->
-
-<section class="partner-section">
-
-    <div class="container">
+    <div class="partner-section">
 
         <div class="section-label">
             PERSONAL & PROFESSIONAL SUPPORT
         </div>
 
-        <h2 class="section-title">
-            <span>Supporting Partner</span>
-        </h2>
-
         <div class="partner-card">
 
-            <div class="partner-label">
-                SUPPORTING PARTNER
+            <div class="partner-content">
+
+                <div class="partner-badge">
+                    SUPPORTING PARTNER
+                </div>
+
+                <h2>
+                    Mehedi Alim Ayon
+                    <span>— Supporting Partner</span>
+                </h2>
+
+                <p>
+                    Throughout her journey, Nusrat has shared an important
+                    personal and professional chapter with her spouse,
+                    Mehedi Alim Ayon. They first became acquainted during
+                    their university life and later made the decision to
+                    build their future together in Malaysia.
+
+                    <br><br>
+
+                    Mehedi is an Agriculturist, Communicationist and
+                    Account Management professional with experience in
+                    agriculture, communication, sales and business
+                    development. His professional journey has developed
+                    alongside Nusrat's academic and research journey,
+                    creating a partnership built on mutual support,
+                    ambition, responsibility and continuous growth.
+
+                    <br><br>
+
+                    Together, they represent a story of two people who left
+                    familiar surroundings, pursued opportunities overseas
+                    and continued building their careers through education,
+                    hard work and determination.
+                </p>
+
+                <a
+                    href="https://mehedialimayon-del.github.io/MEHEDI-ALIM-AYON-PORTFOLIO/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="partner-button"
+                >
+                    VIEW MEHEDI ALIM AYON'S PORTFOLIO →
+                </a>
+
             </div>
 
-            <h3>
-                Mehedi Alim Ayon
-            </h3>
+        </div>
 
-            <p>
-                Mehedi Alim Ayon is an important supporting partner in
-                Nusrat Nasrin's journey. Their relationship began during
-                university life, where they became connected through their
-                academic environment. Sharing similar ambitions and a
-                vision for building an independent future, they eventually
-                moved to Malaysia together.
-            </p>
+    </div>
 
-            <p>
-                Mehedi has built his own professional career as an
-                Account Manager, with experience across agriculture,
-                communication and key account management. His professional
-                growth and continuous support have been an important part
-                of their shared journey in Malaysia.
-            </p>
 
-            <p>
-                Together, they continue to build their careers, support
-                their families and pursue their individual professional
-                ambitions in a new country.
-            </p>
+    <!-- VALUES -->
 
-            <a
-                href="https://mehedialimayon-del.github.io/MEHEDI-ALIM-AYON-PORTFOLIO/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="partner-button"
-            >
-                VISIT SUPPORTING PARTNER →
-            </a>
+    <div class="values">
+
+        <div class="section-label">
+            PROFESSIONAL VALUES
+        </div>
+
+        <h2 class="section-title">
+            What Defines <span>Nusrat</span>
+        </h2>
+
+        <div class="values-grid">
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ★
+                </div>
+
+                <h4>
+                    Research Driven
+                </h4>
+
+                <p>
+                    Passionate about scientific research and continuous
+                    learning.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ♙
+                </div>
+
+                <h4>
+                    Leadership
+                </h4>
+
+                <p>
+                    Strong communication, teamwork and leadership mindset.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ◆
+                </div>
+
+                <h4>
+                    Hard Working
+                </h4>
+
+                <p>
+                    Consistent effort, discipline and commitment toward goals.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ✦
+                </div>
+
+                <h4>
+                    Future Scientist
+                </h4>
+
+                <p>
+                    Working toward advanced research and a future PhD journey.
+                </p>
+
+            </div>
 
         </div>
 
     </div>
 
-</section>
+</div>
+
+</main>
 
 
-<!-- ======================================================
-     CLOSING
-====================================================== -->
-
-<section class="final-section">
-
-    <div class="container">
-
-        <div class="final-box">
-
-            <h2>
-                The Journey <span>Continues</span>
-            </h2>
-
-            <p>
-                From Jessore to Bangladesh Agricultural University,
-                from university leadership and fisheries education to
-                overseas study and aquaculture research at UPM, Nusrat's
-                journey continues to evolve. Her vision is simple but
-                ambitious — to keep learning, keep researching and
-                ultimately contribute as a capable scientist and
-                responsible professional.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     FOOTER
-====================================================== -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
     © 2026
     <strong>Nusrat Nasrin</strong>
     |
-    Agriculturist | Aquaculturist | Researcher | Head of Marketing
+    Agriculturist | Aquaculturist | Researcher | Head Of Marketing
 
 </footer>
 
 
-<!-- ======================================================
-     JAVASCRIPT
-====================================================== -->
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
