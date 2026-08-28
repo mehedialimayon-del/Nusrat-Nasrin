@@ -3,311 +3,1208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>About Me | Nusrat Nasrin</title>
 
+<meta name="description"
+content="About Nusrat Nasrin — Agriculturist, Aquaculturist, Researcher and Head of Marketing.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#071b3a;
-color:#162844;
-line-height:1.8;
+    font-family:'Inter',Arial,sans-serif;
+    background:#071b3a;
+    color:#142542;
+    overflow-x:hidden;
 }
-a{text-decoration:none}
-.top{
-background:linear-gradient(135deg,#071b3a,#0c397b);
-padding:25px 20px;
-color:white;
+
+a{
+    text-decoration:none;
+    color:inherit;
 }
-.nav{
-max-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+
+:root{
+    --navy:#071b3a;
+    --navy2:#0a2855;
+    --blue:#1769d5;
+    --blue2:#2d83f6;
+    --light:#f5f9ff;
+    --white:#ffffff;
+    --text:#142542;
+    --muted:#65738a;
 }
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:fixed;
+    top:14px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:calc(100% - 28px);
+    max-width:1180px;
+
+    height:62px;
+
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 25px;
+
+    z-index:9999;
+
+    box-shadow:0 12px 35px rgba(10,45,90,.12);
+}
+
 .logo{
-font-weight:bold;
-font-size:16px;
+    display:flex;
+    align-items:center;
+    gap:11px;
+
+    font-size:14px;
+    font-weight:800;
+    color:#193253;
 }
-.logo span{color:#58a0ff}
-.home{
-background:white;
-color:#1769d5;
-padding:9px 18px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold;
+
+.logo-mark{
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    background:#fff;
+    border:1px solid #d8e5f6;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#174e9b;
+    font-size:12px;
+    font-weight:800;
 }
+
+.logo span{
+    color:#174e9b;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:29px;
+}
+
+.nav-links a{
+    font-size:11px;
+    font-weight:600;
+    color:#243553;
+
+    position:relative;
+    padding:23px 0;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1769d5;
+}
+
+.nav-links a.active{
+    color:#1769d5;
+}
+
+.nav-links a.active::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:34px;
+    height:3px;
+
+    background:#1769d5;
+
+    border-radius:10px;
+}
+
+.menu-btn{
+    display:none;
+
+    width:40px;
+    height:40px;
+
+    border:0;
+    border-radius:10px;
+
+    background:#edf5ff;
+
+    color:#1769d5;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
 .hero{
-padding:70px 20px 40px;
-color:white;
-text-align:center;
-background:linear-gradient(135deg,#071b3a,#0b2d60);
+    min-height:480px;
+
+    padding-top:145px;
+    padding-bottom:80px;
+
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(45,131,246,.10),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5f9ff 100%
+        );
+
+    position:relative;
+    overflow:hidden;
+
+    border-radius:0 0 42px 42px;
 }
-.hero small{
-letter-spacing:3px;
-color:#7db5ff;
-font-weight:bold;
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    border-radius:50%;
+
+    background:#edf5ff;
+
+    right:-220px;
+    top:-100px;
+
+    opacity:.75;
 }
-.hero h1{
-font-size:48px;
-margin:10px 0;
-}
-.hero h1 span{color:#4d99ff}
+
 .container{
-max-width:1050px;
-margin:auto;
-padding:35px 20px 80px;
+    width:calc(100% - 70px);
+    max-width:1120px;
+    margin:auto;
+
+    position:relative;
+    z-index:2;
 }
-.card{
-background:#fff;
-border-radius:22px;
-padding:35px;
-margin-bottom:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+.hero-content{
+    max-width:850px;
 }
-.card h2{
-color:#1769d5;
-margin-bottom:15px;
-font-size:25px;
+
+.small-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#4c5d76;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
 }
-.card h3{
-color:#0b2d60;
-margin:22px 0 8px;
+
+.small-title::before{
+    content:"";
+
+    width:28px;
+    height:2px;
+
+    background:#1769d5;
 }
-.card p{
-font-size:14px;
-color:#56657b;
+
+.hero h1{
+    font-size:clamp(48px,6vw,72px);
+
+    line-height:.95;
+
+    letter-spacing:-3px;
+
+    font-weight:900;
+
+    color:#071b3a;
+
+    margin-bottom:22px;
 }
-.highlight{
-border-left:4px solid #1769d5;
-padding-left:20px;
-margin-top:20px;
+
+.hero h1 span{
+    color:#1769d5;
 }
-.timeline{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-margin-top:20px;
+
+.hero-description{
+    max-width:760px;
+
+    color:#65738a;
+
+    font-size:13px;
+
+    line-height:1.9;
 }
-.box{
-background:#f4f8ff;
-border:1px solid #dce8f7;
-padding:20px;
-border-radius:16px;
+
+/* =========================
+   MAIN ABOUT
+========================= */
+
+.about-section{
+    background:#f5f9ff;
+
+    padding:85px 0;
 }
-.box strong{
-display:block;
-color:#1769d5;
-margin-bottom:5px;
+
+.section-label{
+    color:#1769d5;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
 }
+
+.section-title{
+    font-size:38px;
+
+    letter-spacing:-1.5px;
+
+    color:#10213f;
+
+    margin-bottom:20px;
+}
+
+.section-title span{
+    color:#1769d5;
+}
+
+.story{
+    background:#ffffff;
+
+    border:1px solid #e0eaf5;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 12px 35px rgba(30,65,110,.07);
+
+    margin-bottom:25px;
+}
+
+.story p{
+    color:#65738a;
+
+    font-size:13px;
+
+    line-height:2;
+
+    margin-bottom:18px;
+}
+
+.story p:last-child{
+    margin-bottom:0;
+}
+
+/* =========================
+   JOURNEY CARDS
+========================= */
+
+.journey-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:30px;
+}
+
+.journey-card{
+    background:#ffffff;
+
+    border:1px solid #e0eaf5;
+
+    border-radius:20px;
+
+    padding:27px;
+
+    box-shadow:0 10px 28px rgba(30,65,110,.06);
+
+    transition:.3s;
+}
+
+.journey-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 16px 35px rgba(30,65,110,.11);
+}
+
+.journey-number{
+    width:44px;
+    height:44px;
+
+    border-radius:50%;
+
+    background:linear-gradient(145deg,#1c63bc,#0d438e);
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:12px;
+    font-weight:800;
+
+    margin-bottom:18px;
+}
+
+.journey-card h3{
+    color:#142542;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+}
+
+.journey-card p{
+    color:#65738a;
+
+    font-size:11px;
+
+    line-height:1.85;
+}
+
+/* =========================
+   BAU / AGRICULTURIST
+========================= */
+
+.dark-section{
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #12366b,
+            transparent 45%
+        ),
+        #071b3a;
+
+    color:white;
+
+    padding:85px 0;
+}
+
+.dark-title{
+    color:#ffffff;
+
+    font-size:38px;
+
+    letter-spacing:-1.5px;
+
+    margin-bottom:20px;
+}
+
+.dark-title span{
+    color:#5da0ff;
+}
+
+.dark-text{
+    color:#b8c7dc;
+
+    font-size:13px;
+
+    line-height:1.95;
+
+    max-width:850px;
+
+    margin-bottom:25px;
+}
+
+.dark-card-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:17px;
+
+    margin-top:30px;
+}
+
+.dark-card{
+    background:rgba(255,255,255,.97);
+
+    color:#142542;
+
+    border-radius:19px;
+
+    padding:27px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.dark-card h3{
+    font-size:14px;
+
+    margin-bottom:12px;
+
+    color:#123d78;
+}
+
+.dark-card p{
+    color:#65738a;
+
+    font-size:11px;
+
+    line-height:1.85;
+}
+
+/* =========================
+   UPM RESEARCH
+========================= */
+
+.upm-section{
+    background:#ffffff;
+
+    padding:85px 0;
+}
+
+.upm-box{
+    margin-top:30px;
+
+    background:#f5f9ff;
+
+    border:1px solid #dfe9f4;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 10px 28px rgba(30,65,110,.06);
+}
+
+.upm-box h3{
+    color:#123d78;
+
+    font-size:18px;
+
+    margin-bottom:16px;
+}
+
+.upm-box p{
+    color:#65738a;
+
+    font-size:12px;
+
+    line-height:1.95;
+
+    margin-bottom:17px;
+}
+
+.research-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.research-item{
+    background:#ffffff;
+
+    border:1px solid #e0eaf5;
+
+    border-radius:16px;
+
+    padding:22px;
+}
+
+.research-item h4{
+    color:#1769d5;
+
+    font-size:12px;
+
+    margin-bottom:9px;
+}
+
+.research-item p{
+    color:#65738a;
+
+    font-size:10px;
+
+    line-height:1.7;
+}
+
+/* =========================
+   CAMPUS LIFE
+========================= */
+
+.campus-section{
+    background:#f5f9ff;
+
+    padding:85px 0;
+}
+
+.campus-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:30px;
+}
+
+.campus-card{
+    background:#ffffff;
+
+    border-radius:18px;
+
+    border:1px solid #e1eaf5;
+
+    padding:25px;
+
+    box-shadow:0 8px 22px rgba(30,65,110,.05);
+}
+
+.campus-card h3{
+    font-size:13px;
+
+    color:#173d73;
+
+    margin-bottom:10px;
+}
+
+.campus-card p{
+    color:#65738a;
+
+    font-size:10px;
+
+    line-height:1.8;
+}
+
+/* =========================
+   SUPPORTING PARTNER
+========================= */
+
+.partner-section{
+    padding:90px 0;
+
+    background:#ffffff;
+}
+
+.partner-card{
+    margin-top:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(45,131,246,.16),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #071b3a,
+            #0a2855
+        );
+
+    border-radius:25px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:0 20px 45px rgba(7,27,58,.20);
+}
+
+.partner-label{
+    display:inline-block;
+
+    padding:7px 13px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    color:#a9c9f5;
+
+    font-size:9px;
+
+    letter-spacing:1.8px;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+}
+
+.partner-card h3{
+    font-size:30px;
+
+    letter-spacing:-1px;
+
+    margin-bottom:15px;
+}
+
+.partner-card p{
+    color:#c2d0e2;
+
+    font-size:12px;
+
+    line-height:1.9;
+
+    max-width:800px;
+
+    margin-bottom:25px;
+}
+
+.partner-button{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:13px 20px;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    color:#123d78;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+}
+
+.partner-button:hover{
+    transform:translateY(-3px);
+
+    background:#eaf3ff;
+}
+
+/* =========================
+   FINAL MESSAGE
+========================= */
+
+.final-section{
+    background:#f5f9ff;
+
+    padding:80px 0;
+}
+
+.final-box{
+    text-align:center;
+
+    max-width:800px;
+
+    margin:auto;
+}
+
+.final-box h2{
+    color:#10213f;
+
+    font-size:30px;
+
+    margin-bottom:15px;
+}
+
+.final-box h2 span{
+    color:#1769d5;
+}
+
+.final-box p{
+    color:#65738a;
+
+    font-size:12px;
+
+    line-height:1.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer{
-text-align:center;
-padding:25px;
-color:#a9bad2;
-font-size:11px;
+    background:#061731;
+
+    color:#9aacc4;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:10px;
 }
-@media(max-width:650px){
-.hero h1{font-size:36px}
-.card{padding:23px}
-.timeline{grid-template-columns:1fr}
-.nav{gap:15px}
+
+footer strong{
+    color:white;
 }
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+    .navbar{
+        width:calc(100% - 20px);
+
+        top:10px;
+
+        height:58px;
+
+        padding:0 16px;
+    }
+
+    .nav-links{
+        display:none;
+
+        position:absolute;
+
+        top:68px;
+
+        left:0;
+
+        width:100%;
+
+        padding:18px;
+
+        background:white;
+
+        border-radius:15px;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+        box-shadow:0 15px 30px rgba(20,50,90,.12);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:4px 0;
+
+        width:100%;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .container{
+        width:calc(100% - 35px);
+    }
+
+    .journey-grid,
+    .dark-card-grid{
+        grid-template-columns:1fr;
+    }
+
+    .research-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .campus-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:560px){
+
+    .navbar{
+        top:8px;
+
+        height:54px;
+
+        width:calc(100% - 20px);
+
+        border-radius:17px;
+
+        padding:0 13px;
+    }
+
+    .logo{
+        font-size:11px;
+
+        gap:8px;
+    }
+
+    .logo-mark{
+        width:34px;
+        height:34px;
+
+        font-size:11px;
+    }
+
+    .menu-btn{
+        width:38px;
+        height:38px;
+
+        font-size:19px;
+    }
+
+    .container{
+        width:calc(100% - 28px);
+    }
+
+    .hero{
+        padding-top:105px;
+
+        padding-bottom:55px;
+
+        border-radius:0 0 25px 25px;
+    }
+
+    .hero::before{
+        width:380px;
+        height:380px;
+
+        right:-220px;
+        top:40px;
+    }
+
+    .small-title{
+        font-size:8px;
+
+        letter-spacing:1.5px;
+
+        margin-bottom:13px;
+    }
+
+    .hero h1{
+        font-size:42px;
+
+        letter-spacing:-1.8px;
+
+        line-height:.9;
+
+        margin-bottom:16px;
+    }
+
+    .hero-description{
+        font-size:10px;
+
+        line-height:1.7;
+    }
+
+    .about-section,
+    .dark-section,
+    .upm-section,
+    .campus-section,
+    .partner-section,
+    .final-section{
+        padding:55px 0;
+    }
+
+    .section-title,
+    .dark-title{
+        font-size:29px;
+
+        letter-spacing:-1px;
+    }
+
+    .story{
+        padding:20px;
+
+        border-radius:16px;
+    }
+
+    .story p{
+        font-size:10px;
+
+        line-height:1.8;
+
+        margin-bottom:14px;
+    }
+
+    .journey-grid,
+    .dark-card-grid,
+    .research-grid,
+    .campus-grid{
+        grid-template-columns:1fr;
+
+        gap:10px;
+    }
+
+    .journey-card,
+    .dark-card,
+    .research-item,
+    .campus-card{
+        padding:19px;
+
+        border-radius:14px;
+    }
+
+    .journey-card h3,
+    .dark-card h3{
+        font-size:12px;
+    }
+
+    .journey-card p,
+    .dark-card p,
+    .campus-card p{
+        font-size:9px;
+
+        line-height:1.7;
+    }
+
+    .dark-text{
+        font-size:10px;
+
+        line-height:1.8;
+    }
+
+    .upm-box{
+        padding:21px;
+
+        border-radius:16px;
+    }
+
+    .upm-box h3{
+        font-size:14px;
+    }
+
+    .upm-box p{
+        font-size:10px;
+
+        line-height:1.8;
+    }
+
+    .research-item h4{
+        font-size:10px;
+    }
+
+    .research-item p{
+        font-size:9px;
+    }
+
+    .partner-card{
+        padding:25px 20px;
+
+        border-radius:18px;
+    }
+
+    .partner-label{
+        font-size:7px;
+    }
+
+    .partner-card h3{
+        font-size:23px;
+    }
+
+    .partner-card p{
+        font-size:9px;
+
+        line-height:1.75;
+    }
+
+    .partner-button{
+        font-size:8px;
+
+        padding:11px 15px;
+    }
+
+    .final-box h2{
+        font-size:24px;
+    }
+
+    .final-box p{
+        font-size:10px;
+    }
+
+    footer{
+        padding:18px;
+
+        font-size:7px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<header class="top">
-<div class="nav">
-<div class="logo">NUSRAT <span>NASRIN</span></div>
-<a class="home" href="index.html">← HOME</a>
-</div>
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-mark">
+            AN
+        </div>
+
+        <div>
+            NUSRAT <span>NASRIN</span>
+        </div>
+
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html" class="active">
+            About
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="profile.html">
+            Profile / CV
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
 </header>
 
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
 <section class="hero">
-<small>ABOUT ME</small>
-<h1>Nusrat <span>Nasrin</span></h1>
-<p>Agriculturist • Aquaculturist • Researcher • Head of Marketing</p>
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                ABOUT ME
+            </div>
+
+            <h1>
+                MY <span>JOURNEY</span>
+            </h1>
+
+            <p class="hero-description">
+                From a determined young girl in Jessore to an Agriculturist,
+                Aquaculturist, Researcher and Marketing professional in Malaysia —
+                this is the story of Nusrat Nasrin's academic, professional and
+                personal journey.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
-<main class="container">
 
-<div class="card">
-<h2>A Journey Built on Courage, Curiosity & Purpose</h2>
+<!-- ======================================================
+     PERSONAL STORY
+====================================================== -->
 
-<p>
-Nusrat Nasrin was born on 16 December 1999 in Jessore, Bangladesh,
-in the Chougachha area of Jessore District. She grew up as an energetic,
-ambitious and determined young woman whose curiosity and courage were
-visible from an early age.
-</p>
+<section class="about-section">
 
-<p style="margin-top:15px">
-Born to FosiuZZaman and Aleya Khatun, Nusrat became known within her
-family for her independent spirit, strong character and willingness
-to take responsibility. Her journey has been shaped by a simple
-principle: work hard, keep learning and create a meaningful future
-through knowledge and perseverance.
-</p>
+    <div class="container">
 
-<div class="highlight">
-<strong>
-Her long-term ambition is to develop herself as a researcher and
-scientist in aquaculture while continuing to support her family and
-contribute to sustainable aquatic development.
-</strong>
-</div>
-</div>
+        <div class="section-label">
+            PERSONAL STORY
+        </div>
 
-<div class="card">
-<h2>Academic Journey</h2>
+        <h2 class="section-title">
+            A Journey Built on <span>Dreams & Determination</span>
+        </h2>
 
-<div class="timeline">
+        <div class="story">
 
-<div class="box">
-<strong>Bangladesh Agricultural University</strong>
-BSc in Fisheries. A foundation in fisheries science, aquaculture,
-aquatic resources and practical scientific education.
-</div>
+            <p>
+                Nusrat Nasrin was born on 16 December 1999 in Jessore,
+                Bangladesh, in the Chougachha area of Jessore District.
+                On a bright and sunlit December day, her parents,
+                Fosiyuzzaman and Aleya Khatun, welcomed their daughter
+                into the world.
+            </p>
 
-<div class="box">
-<strong>University Life</strong>
-Academic discipline combined with leadership, organizational
-activities, cultural involvement and teamwork.
-</div>
+            <p>
+                From childhood, Nusrat was energetic, courageous,
+                determined and exceptionally curious. Her independent
+                personality and fearless nature often made her parents
+                feel as though they had been blessed with a son.
+                She grew up with a strong sense of responsibility,
+                resilience and ambition.
+            </p>
 
-<div class="box">
-<strong>Malaysia</strong>
-Moved overseas in 2024 to pursue higher education and expand her
-professional and academic horizon.
-</div>
-
-<div class="box">
-<strong>Master / MBA</strong>
-Completed an MBA in Malaysia, developing her understanding of
-business, management, communication and leadership.
-</div>
-
-<div class="box">
-<strong>Universiti Putra Malaysia</strong>
-Currently pursuing research in Aquaculture with a strong interest
-in sustainable aquatic science and innovation.
-</div>
-
-<div class="box">
-<strong>Future Goal</strong>
-Build a strong research career, publish scientific work and progress
-towards a PhD and a career as a scientist.
-</div>
-
-</div>
-</div>
-
-<div class="card">
-<h2>Life at Bangladesh Agricultural University</h2>
-
-<p>
-Bangladesh Agricultural University provided the environment where
-Nusrat developed her academic identity in Fisheries. Her interest in
-aquatic science made Fisheries a natural first choice, and her
-university years became an important chapter in her development.
-</p>
-
-<h3>Leadership & Campus Life</h3>
-
-<p>
-Beyond academics, she participated in university organizations,
-cultural activities and student initiatives. These experiences
-strengthened her communication ability, teamwork, leadership,
-discipline and confidence.
-</p>
-
-<h3>Sultana Razia Hall</h3>
-
-<p>
-Her residential life at Sultana Razia Hall added another dimension
-to her university experience. Hall life brought together study,
-friendship, senior-junior relationships, discipline, cultural
-activities and everyday memories that helped shape her personality.
-</p>
-</div>
-
-<div class="card">
-<h2>Life in Malaysia</h2>
-
-<p>
-In 2024, Nusrat chose Malaysia as the next chapter of her educational
-and professional journey. She came to Malaysia together with her
-spouse, Mehedi Alim Ayon, with the intention of building an
-independent future while continuing higher education.
-</p>
-
-<p style="margin-top:15px">
-Her main academic ambition remained research in aquaculture. At the
-same time, she pursued an MBA because of her interest in business,
-management and organizational leadership.
-</p>
-</div>
-
-<div class="card">
-<h2>Professional Growth</h2>
-
-<p>
-Alongside her academic journey, Nusrat entered the travel and
-professional services sector. What began as an opportunity to gain
-experience developed into a significant professional pathway.
-</p>
-
-<p style="margin-top:15px">
-Her communication skills, discipline, hard work, customer
-relationship ability and leadership qualities helped her take on
-greater responsibilities. Within a relatively short period, she
-progressed into a leadership role in marketing.
-</p>
-
-<h3>Head of Marketing</h3>
-
-<p>
-Today, she combines academic ambition with professional leadership,
-bringing together research, communication, business understanding
-and people management.
-</p>
-</div>
-
-<div class="card">
-<h2>Mehedi Alim Ayon</h2>
-
-<p>
-Nusrat's journey in Malaysia is also connected with her spouse,
-Mehedi Alim Ayon. They first became acquainted during their
-university life and later chose to build their future together in
-Malaysia.
-</p>
-
-<p style="margin-top:15px">
-Mehedi is professionally involved in account management and
-agriculture-related work. Their shared academic background and
-professional ambitions have made their overseas journey a story of
-mutual support, growth and perseverance.
-</p>
-
-<br>
-
-<a href="https://mehedialimayon-del.github.io/Nusrat-Nasrin/"
-target="_blank"
-style="display:inline-block;background:#1769d5;color:white;padding:12px 22px;border-radius:25px;font-weight:bold;font-size:12px">
-VISIT MEHEDI ALIM AYON'S PORTFOLIO →
-</a>
-
-</div>
-
-</main>
-
-<footer>
-© 2026 Nusrat Nasrin • Agriculturist • Aquaculturist • Researcher
-</footer>
-
-</body>
-</html>
+            <p>
+                That determination gradually became one of the strongest
+                characteristics of her personality. She developed a
+                commitment not only to building her own future but also
