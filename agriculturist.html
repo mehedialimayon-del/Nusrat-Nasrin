@@ -1,13 +1,18 @@
+আপনার প্রদান করা গল্প, তথ্য এবং ডিজাইন স্ট্রাকচার সম্পূর্ণ বজায় রেখে আপনার স্ত্রীর পোর্টফোলিওর জন্য agriculturist.html পেজের পুরো HTML কোডটি প্রস্তুত করে দেওয়া হলো।
+এই কোডে:
+ * হেডারের ডানপাশে BAU-এর লোগো: আপনার দেওয়া লিংক ([https://i.postimg.cc/vH2d6rV3/images-(2).png](https://i.postimg.cc/vH2d6rV3/images-(2).png)) ব্যবহার করে হেডার সেকশনের ডানপাশে BAU-এর লোগো যুক্ত করা হয়েছে।
+ * সম্পূর্ণ গল্প ও আবেগ: ২০১৮ সালের এসএসসি, যশোরের অদম্য মেধাবী স্বভাব, ১২৫০ একরের সবুজ চত্বর, সুলতানা রাজিয়া হল, ট্রাইব্যুনাল/সাংস্কৃতিক সংগঠন, গ্রীন ভয়েস, সিআরশিপ, ফিশারিজের রিসার্চ, বাবা-মায়ের প্রতি ভালোবাসা এবং নিজের পায়ে দাঁড়ানোর লক্ষ্যে ওভারসিজ রিসার্চের সুন্দর ও প্রফেশনাল ইংরেজি রূপান্তর কোডে যুক্ত করা হয়েছে।
+আপনি এই সম্পূর্ণ কোডটি কপি করে আপনার প্রজেক্টের agriculturist.html ফাইলে পেস্ট করে দিন:
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nusrat Nasrin | Agriculturist</title>
+<title>NUSRAT NASRIN | AGRICULTURIST</title>
 
 <meta name="description"
-content="Nusrat Nasrin - Agriculturist, Fisheries Graduate and Aquaculture Researcher.">
+content="Agriculturist Journey of Nusrat Nasrin — BAU Alumna, Fisheries Researcher, and Aquatic Science Specialist.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,35 +54,24 @@ a{
     --muted:#65738a;
 }
 
-
-/* =========================
-   NAVBAR
-========================= */
+/* ================= NAVBAR ================= */
 
 .navbar{
     position:fixed;
     top:14px;
     left:50%;
     transform:translateX(-50%);
-
     width:calc(100% - 28px);
     max-width:1180px;
-
     height:62px;
-
     background:rgba(255,255,255,.97);
     backdrop-filter:blur(15px);
-
     border-radius:18px;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     padding:0 25px;
-
     z-index:9999;
-
     box-shadow:0 12px 35px rgba(10,45,90,.12);
 }
 
@@ -85,7 +79,6 @@ a{
     display:flex;
     align-items:center;
     gap:11px;
-
     font-size:14px;
     font-weight:800;
     color:#193253;
@@ -94,15 +87,1037 @@ a{
 .logo-mark{
     width:38px;
     height:38px;
-
     border-radius:50%;
-
     background:#fff;
     border:1px solid #d8e5f6;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     color:#174e9b;
-    font-size:12
+    font-size:12px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#174e9b;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:29px;
+}
+
+.nav-links a{
+    font-size:11px;
+    font-weight:600;
+    color:#243553;
+    position:relative;
+    padding:23px 0;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1769d5;
+}
+
+.nav-links a.active{
+    color:#1769d5;
+}
+
+.nav-links a.active::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:34px;
+    height:3px;
+    background:#1769d5;
+    border-radius:10px;
+}
+
+.menu-btn{
+    display:none;
+    width:40px;
+    height:40px;
+    border:0;
+    border-radius:10px;
+    background:#edf5ff;
+    color:#1769d5;
+    font-size:20px;
+}
+
+/* ================= HERO WITH LOGO ================= */
+
+.hero{
+    min-height:390px;
+    padding-top:130px;
+    padding-bottom:75px;
+
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(45,131,246,.12),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5f9ff 100%
+        );
+
+    position:relative;
+    overflow:hidden;
+
+    border-radius:0 0 42px 42px;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    background:#edf5ff;
+    right:-220px;
+    top:-150px;
+    opacity:.75;
+}
+
+.container{
+    width:calc(100% - 70px);
+    max-width:1120px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+.hero-grid-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.univ-logo-container{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.univ-logo{
+    width:130px;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 10px 20px rgba(7,27,58,0.15));
+    transition:transform 0.3s ease;
+}
+
+.univ-logo:hover{
+    transform:scale(1.05);
+}
+
+.hero-small{
+    color:#1b68c8;
+    font-size:10px;
+    letter-spacing:3px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(40px,5vw,65px);
+    line-height:.98;
+    letter-spacing:-2px;
+    font-weight:900;
+    color:#071b3a;
+    margin-bottom:18px;
+}
+
+.hero h1 span{
+    color:#185eb9;
+}
+
+.hero-line{
+    width:60px;
+    height:3px;
+    background:#1769d5;
+    margin:20px 0;
+}
+
+.hero p{
+    max-width:700px;
+    color:#65738a;
+    font-size:13px;
+    line-height:1.9;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main{
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #12366b,
+            transparent 45%
+        ),
+        #071b3a;
+
+    padding:75px 0 90px;
+}
+
+.section-label{
+    color:#75aef1;
+    font-size:10px;
+    letter-spacing:2.5px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.section-title{
+    color:#fff;
+    font-size:38px;
+    letter-spacing:-1.5px;
+    margin-bottom:20px;
+}
+
+.section-title span{
+    color:#5fa0ed;
+}
+
+.intro{
+    color:#d5dfed;
+    font-size:13px;
+    line-height:1.95;
+    max-width:850px;
+    margin-bottom:40px;
+}
+
+/* ================= STORY CARDS ================= */
+
+.story-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.story-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.14);
+}
+
+.story-card.full{
+    grid-column:span 2;
+}
+
+.story-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#1c63bc,#0d438e);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    margin-bottom:18px;
+}
+
+.story-card h3{
+    color:#10213f;
+    font-size:18px;
+    margin-bottom:14px;
+}
+
+.story-card p{
+    color:#65738a;
+    font-size:12px;
+    line-height:1.9;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline-section{
+    margin-top:60px;
+}
+
+.timeline{
+    margin-top:30px;
+    display:grid;
+    gap:15px;
+}
+
+.timeline-item{
+    display:grid;
+    grid-template-columns:130px 1fr;
+    gap:20px;
+    align-items:start;
+}
+
+.timeline-year{
+    color:#fff;
+    font-size:15px;
+    font-weight:800;
+    background:#0b2b5a;
+    border:1px solid rgba(110,165,235,.25);
+    padding:15px;
+    border-radius:14px;
+    text-align:center;
+}
+
+.timeline-content{
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+}
+
+.timeline-content h4{
+    color:#172a48;
+    font-size:14px;
+    margin-bottom:7px;
+}
+
+.timeline-content p{
+    color:#65738a;
+    font-size:11px;
+    line-height:1.8;
+}
+
+/* ================= VALUES ================= */
+
+.values{
+    margin-top:65px;
+}
+
+.values-grid{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+.value{
+    background:#fff;
+    border-radius:17px;
+    padding:24px 18px;
+    text-align:center;
+}
+
+.value-icon{
+    width:48px;
+    height:48px;
+    margin:0 auto 13px;
+    border-radius:50%;
+    background:#eaf3ff;
+    color:#1769d5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+
+.value h4{
+    color:#172a48;
+    font-size:12px;
+    margin-bottom:8px;
+}
+
+.value p{
+    color:#65738a;
+    font-size:9px;
+    line-height:1.6;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#061731;
+    color:#9aacc4;
+    text-align:center;
+    padding:25px;
+    font-size:10px;
+}
+
+footer strong{
+    color:#fff;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media(max-width:900px){
+
+    .navbar{
+        width:calc(100% - 20px);
+        top:10px;
+        height:58px;
+        padding:0 16px;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:68px;
+        left:0;
+        width:100%;
+        padding:18px;
+        background:#fff;
+        border-radius:15px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+        box-shadow:0 15px 30px rgba(20,50,90,.12);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:4px 0;
+        width:100%;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .container{
+        width:calc(100% - 35px);
+    }
+
+    .hero-grid-header{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .univ-logo{
+        width:100px;
+    }
+
+    .hero-line{
+        margin:20px auto;
+    }
+
+    .story-grid{
+        grid-template-columns:1fr;
+    }
+
+    .story-card.full{
+        grid-column:span 1;
+    }
+
+    .values-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:560px){
+
+    .navbar{
+        top:8px;
+        height:54px;
+        width:calc(100% - 20px);
+        border-radius:17px;
+        padding:0 13px;
+    }
+
+    .logo{
+        font-size:11px;
+        gap:8px;
+    }
+
+    .logo-mark{
+        width:34px;
+        height:34px;
+        font-size:11px;
+    }
+
+    .menu-btn{
+        width:38px;
+        height:38px;
+        font-size:19px;
+    }
+
+    .hero{
+        padding-top:100px;
+        padding-bottom:40px;
+        border-radius:0 0 25px 25px;
+    }
+
+    .container{
+        width:calc(100% - 28px);
+    }
+
+    .univ-logo{
+        width:85px;
+    }
+
+    .hero-small{
+        font-size:8px;
+        letter-spacing:2px;
+    }
+
+    .hero h1{
+        font-size:32px;
+        letter-spacing:-1px;
+    }
+
+    .hero p{
+        font-size:10px;
+        line-height:1.7;
+    }
+
+    .main{
+        padding:50px 0 55px;
+    }
+
+    .section-label{
+        font-size:8px;
+    }
+
+    .section-title{
+        font-size:26px;
+        letter-spacing:-1px;
+    }
+
+    .intro{
+        font-size:10px;
+        line-height:1.75;
+    }
+
+    .story-grid{
+        gap:10px;
+    }
+
+    .story-card{
+        padding:20px 17px;
+        border-radius:15px;
+    }
+
+    .story-icon{
+        width:43px;
+        height:43px;
+        font-size:17px;
+        margin-bottom:12px;
+    }
+
+    .story-card h3{
+        font-size:13px;
+        margin-bottom:9px;
+    }
+
+    .story-card p{
+        font-size:9px;
+        line-height:1.7;
+    }
+
+    .timeline-section,
+    .values{
+        margin-top:45px;
+    }
+
+    .timeline{
+        gap:10px;
+    }
+
+    .timeline-item{
+        grid-template-columns:85px 1fr;
+        gap:8px;
+    }
+
+    .timeline-year{
+        font-size:9px;
+        padding:12px 5px;
+        border-radius:10px;
+    }
+
+    .timeline-content{
+        padding:14px;
+        border-radius:12px;
+    }
+
+    .timeline-content h4{
+        font-size:10px;
+    }
+
+    .timeline-content p{
+        font-size:8px;
+        line-height:1.6;
+    }
+
+    .values-grid{
+        margin-top:20px;
+        gap:9px;
+    }
+
+    .value{
+        padding:17px 10px;
+        border-radius:13px;
+    }
+
+    .value-icon{
+        width:38px;
+        height:38px;
+        font-size:14px;
+    }
+
+    .value h4{
+        font-size:9px;
+    }
+
+    .value p{
+        font-size:7px;
+    }
+
+    footer{
+        padding:18px;
+        font-size:7px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-mark">
+            AN
+        </div>
+
+        <div>
+            NUSRAT <span>NASRIN</span>
+        </div>
+
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="agriculturist.html" class="active">
+            Agriculturist
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="resume.html">
+            Profile / CV
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ================= HERO WITH BAU LOGO ================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-grid-header">
+
+            <div class="hero-content">
+
+                <div class="hero-small">
+                    AGRICULTURIST & RESEARCHER
+                </div>
+
+                <h1>
+                    Academic Excellence at<br>
+                    <span>Bangladesh Agricultural University</span>
+                </h1>
+
+                <div class="hero-line"></div>
+
+                <p>
+                    From a spirited student in Jashore to securing a position at Bangladesh’s premier agricultural institution—discovering passion, research ambition, and leadership within the 1250-acre green campus of BAU.
+                </p>
+
+            </div>
+
+            <!-- BAU LOGO AT RIGHT TOP -->
+            <div class="univ-logo-container">
+                <img src="https://i.postimg.cc/vH2d6rV3/images-(2).png" alt="Bangladesh Agricultural University Logo" class="univ-logo">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+<div class="container">
+
+    <div class="section-label">
+        THE AGRICULTURIST'S JOURNEY
+    </div>
+
+    <h2 class="section-title">
+        From <span>Jashore</span> to BAU & Beyond
+    </h2>
+
+    <p class="intro">
+        Nusrat Nasrin’s identity as an Agriculturist was forged through brilliance, resilience, and an unwavering passion for scientific research. Emerging from Jashore with stellar academic results, her journey through Bangladesh Agricultural University (BAU) set the foundation for her dream of becoming a world-class scientist.
+    </p>
+
+
+    <!-- STORY CARDS -->
+
+    <div class="story-grid">
+
+        <div class="story-card">
+
+            <div class="story-icon">
+                🎓
+            </div>
+
+            <h3>
+                Academic Brilliance & BAU Admission
+            </h3>
+
+            <p>
+                After completing her Secondary School Certificate (SSC) in 2018 with outstanding merit from Jashore, Nusrat’s fascination with nature and biological research grew stronger. Driven by dedication and relentless hard work, she earned a coveted spot on the merit list of Bangladesh Agricultural University (BAU)—the country's supreme seat of agricultural learning.
+            </p>
+
+        </div>
+
+
+        <div class="story-card">
+
+            <div class="story-icon">
+                🌊
+            </div>
+
+            <h3>
+                Chosen Discipline: Fisheries Faculty
+            </h3>
+
+            <p>
+                Out of all available agricultural domains, Nusrat passionately chose the Faculty of Fisheries as her primary discipline. Her decision stemmed from a profound interest in aquatic ecosystems, sustainable fish production, and the scientific potential of aquaculture research to solve global food security challenges.
+            </p>
+
+        </div>
+
+
+        <div class="story-card">
+
+            <div class="story-icon">
+                🏡
+            </div>
+
+            <h3>
+                1250-Acre Campus & Hall Life
+            </h3>
+
+            <p>
+                Entering the vast 1250-acre green campus of BAU in late 2018 marked her transition into an independent individual. Attached to Sultana Razia Hall, she adapted to a new family of peers and seniors. Leaving her family's warm protection for the first time, Sultana Razia Hall quickly became her "second home," instilling discipline, empathy, and maturity.
+            </p>
+
+        </div>
+
+
+        <div class="story-card">
+
+            <div class="story-icon">
+                🏛️
+            </div>
+
+            <h3>
+                Campus Leadership & Culture
+            </h3>
+
+            <p>
+                Beyond maintaining top-tier grades across every semester, Nusrat was a pillar of campus activities. She actively served as a Class Representative (CR), served in cultural platforms like 'Tribhuj', and dedicated time to 'Green Voice'—a volunteer organization working for environmental preservation and nature awareness.
+            </p>
+
+        </div>
+
+
+        <div class="story-card full">
+
+            <div class="story-icon">
+                🌏
+            </div>
+
+            <h3>
+                Self-Reliance & Overseas Research Vision
+            </h3>
+
+            <p>
+                Graduating with her Bachelor's degree in 2024 with exemplary academic standing, Nusrat aimed for overseas research. Inspired by BAU professors who pursued specialization at Universiti Putra Malaysia (UPM), she set her sights on international research. Refusing to burden her devoted parents financially for expensive European programs, her self-reliant spirit guided her to pursue higher education independently, leading her to Malaysia where she completed an MBA for business acumen before diving into advanced Aquaculture research at UPM.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- TIMELINE -->
+
+    <div class="timeline-section">
+
+        <div class="section-label">
+            MILESTONES
+        </div>
+
+        <h2 class="section-title">
+            Key Chapters of <span>Her Journey</span>
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2018
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        SSC Completion & BAU Admission
+                    </h4>
+
+                    <p>
+                        Completed secondary education with top honors in Jashore. Secured a high rank in BAU admission test and joined the Faculty of Fisheries.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2018 - 2023
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        BAU Life & Leadership
+                    </h4>
+
+                    <p>
+                        Resided at Sultana Razia Hall. Managed Class Representative (CR) duties, participated in cultural organization 'Tribhuj', and environmental campaigns with 'Green Voice'.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2024
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        Graduation & Research Preparation
+                    </h4>
+
+                    <p>
+                        Successfully completed B.Sc. in Fisheries with stellar grades. Developed research proposals and planned overseas higher education independently.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    CURRENT
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        MBA & UPM Aquaculture Research
+                    </h4>
+
+                    <p>
+                        Completed an MBA to gain commercial acumen and actively pursuing Master's Aquaculture Research at Universiti Putra Malaysia (UPM) aiming for a global PhD and Scientist career.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VALUES -->
+
+    <div class="values">
+
+        <div class="section-label">
+            CORE PHILOSOPHY
+        </div>
+
+        <h2 class="section-title">
+            Driven by <span>Values & Vision</span>
+        </h2>
+
+        <div class="values-grid">
+
+            <div class="value">
+
+                <div class="value-icon">
+                    🔬
+                </div>
+
+                <h4>
+                    Scientific Curiosity
+                </h4>
+
+                <p>
+                    Deep passion for aquatic research and sustainable innovation.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    🌱
+                </div>
+
+                <h4>
+                    Self-Reliance
+                </h4>
+
+                <p>
+                    Achieving big dreams while being independent and responsible.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    👑
+                </div>
+
+                <h4>
+                    Leadership
+                </h4>
+
+                <p>
+                    Leading peers through Class Representation and social initiatives.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ✨
+                </div>
+
+                <h4>
+                    Future Scientist
+                </h4>
+
+                <p>
+                    Striving to make impactful scientific contributions globally.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026
+    <strong>Nusrat Nasrin</strong>
+    |
+    Agriculturist | Aquaculturist | Researcher | Head Of Marketing
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+
