@@ -7,7 +7,7 @@
 <title>NUSRAT NASRIN | Aquaculturist & Overseas Research</title>
 
 <meta name="description"
-content="Aquaculture Research, Master of Science Thesis, and Overseas Academic Works of Nusrat Nasrin from Universiti Putra Malaysia.">
+content="Master of Science in Aquaculture Thesis, Live-Feed Research, and Academic Journey of Nusrat Nasrin at Universiti Putra Malaysia.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +99,7 @@ a{
 .nav-links{
     display:flex;
     align-items:center;
-    gap:25px;
+    gap:20px;
 }
 
 .nav-links a{
@@ -111,10 +111,7 @@ a{
     transition:.3s;
 }
 
-.nav-links a:hover{
-    color:#1769d5;
-}
-
+.nav-links a:hover,
 .nav-links a.active{
     color:#1769d5;
 }
@@ -145,14 +142,14 @@ a{
 /* ================= HERO ================= */
 
 .hero{
-    min-height:280px;
-    padding-top:120px;
-    padding-bottom:40px;
+    min-height:300px;
+    padding-top:130px;
+    padding-bottom:50px;
     background:
         radial-gradient(
             circle at 85% 25%,
-            rgba(45,131,246,.12),
-            transparent 32%
+            rgba(45,131,246,.15),
+            transparent 35%
         ),
         linear-gradient(
             135deg,
@@ -160,34 +157,31 @@ a{
             #f5f9ff 100%
         );
     position:relative;
-    overflow:hidden;
-    border-radius:0 0 42px 42px;
+    border-radius:0 0 45px 45px;
 }
 
 .container{
-    width:calc(100% - 70px);
+    width:calc(100% - 50px);
     max-width:1120px;
     margin:auto;
-    position:relative;
-    z-index:2;
 }
 
 .hero-content{
     text-align:center;
-    max-width:780px;
+    max-width:800px;
     margin:0 auto;
 }
 
 .hero-small{
     color:#1b68c8;
-    font-size:10px;
+    font-size:11px;
     letter-spacing:3px;
     font-weight:800;
     margin-bottom:12px;
 }
 
 .hero h1{
-    font-size:clamp(28px,3.8vw,44px);
+    font-size:clamp(26px,3.8vw,42px);
     line-height:1.2;
     letter-spacing:-1px;
     font-weight:900;
@@ -203,12 +197,12 @@ a{
     width:50px;
     height:3px;
     background:#1769d5;
-    margin:12px auto;
+    margin:15px auto;
 }
 
 .hero p{
     color:#65738a;
-    font-size:12px;
+    font-size:13px;
     line-height:1.7;
 }
 
@@ -219,52 +213,87 @@ a{
         radial-gradient(
             circle at 50% 0%,
             #12366b,
-            transparent 45%
+            transparent 50%
         ),
         #071b3a;
-    padding:50px 0 70px;
+    padding:60px 0 80px;
 }
 
 .section-card{
     background:#fff;
-    border-radius:20px;
-    padding:35px;
-    box-shadow:0 15px 35px rgba(0,0,0,.2);
-    margin-bottom:30px;
+    border-radius:22px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    margin-bottom:35px;
 }
 
 .section-card h2{
-    font-size:20px;
+    font-size:22px;
     color:#071b3a;
     font-weight:800;
-    margin-bottom:15px;
+    margin-bottom:18px;
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
+    border-bottom:2px solid #edf2f9;
+    padding-bottom:12px;
 }
 
-.meta-box{
+.content-text{
+    color:#505e75;
+    font-size:13.5px;
+    line-height:1.85;
+    margin-bottom:18px;
+    text-align:justify;
+}
+
+/* INSTITUTION BANNER */
+.inst-banner{
+    display:flex;
+    align-items:center;
+    gap:20px;
     background:#f5f9ff;
-    padding:20px;
+    padding:20px 25px;
     border-radius:14px;
-    margin:15px 0 20px;
-    border-left:4px solid #1769d5;
+    margin:20px 0;
+    border-left:5px solid #1769d5;
+}
+
+.inst-logo{
+    width:70px;
+    height:auto;
+    object-fit:contain;
+}
+
+.inst-info h4{
+    font-size:15px;
+    color:#071b3a;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.inst-info p{
+    font-size:12px;
+    color:#65738a;
+}
+
+/* THESIS META BOX */
+.meta-box{
+    background:#f8fbff;
+    border:1px solid #e1ecfb;
+    padding:22px;
+    border-radius:14px;
+    margin:20px 0;
     font-size:13px;
     color:#193253;
-    line-height:1.6;
+    line-height:1.7;
 }
 
 .meta-box strong{
     color:#071b3a;
 }
 
-.content-text{
-    color:#65738a;
-    font-size:13px;
-    line-height:1.8;
-    margin-bottom:15px;
-}
-
+/* GRID LAYOUTS */
 .grid-2{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -275,21 +304,61 @@ a{
 .info-box{
     background:#f8fbff;
     border:1px solid #e1ecfb;
-    padding:20px;
-    border-radius:12px;
+    padding:22px;
+    border-radius:14px;
 }
 
 .info-box h4{
     font-size:14px;
     color:#1769d5;
-    margin-bottom:8px;
+    margin-bottom:10px;
     font-weight:700;
 }
 
 .info-box p{
-    font-size:12px;
+    font-size:12.5px;
     color:#65738a;
-    line-height:1.6;
+    line-height:1.7;
+}
+
+/* RESEARCH GATE BUTTON */
+.rg-container{
+    text-align:center;
+    margin-top:30px;
+    padding:25px;
+    background:linear-gradient(135deg, #071b3a, #0a2855);
+    border-radius:16px;
+    color:#fff;
+}
+
+.rg-container h3{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.rg-container p{
+    font-size:12.5px;
+    color:#b8c7e0;
+    margin-bottom:20px;
+}
+
+.btn-rg{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#00d084;
+    color:#071b3a;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:800;
+    font-size:13px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,208,132,.3);
+}
+
+.btn-rg:hover{
+    background:#02b873;
+    transform:translateY(-2px);
 }
 
 /* ================= FOOTER ================= */
@@ -299,7 +368,7 @@ footer{
     color:#9aacc4;
     text-align:center;
     padding:25px;
-    font-size:10px;
+    font-size:11px;
 }
 
 footer strong{
@@ -326,7 +395,7 @@ footer strong{
         border-radius:15px;
         flex-direction:column;
         align-items:flex-start;
-        gap:15px;
+        gap:12px;
         box-shadow:0 15px 30px rgba(20,50,90,.12);
     }
     .nav-links.active{
@@ -345,6 +414,10 @@ footer strong{
     .grid-2{
         grid-template-columns:1fr;
     }
+    .inst-banner{
+        flex-direction:column;
+        text-align:center;
+    }
 }
 
 </style>
@@ -357,12 +430,8 @@ footer strong{
 <header class="navbar">
 
     <a href="index.html" class="logo">
-        <div class="logo-mark">
-            AN
-        </div>
-        <div>
-            NUSRAT <span>NASRIN</span>
-        </div>
+        <div class="logo-mark">AN</div>
+        <div>NUSRAT <span>NASRIN</span></div>
     </a>
 
     <nav class="nav-links" id="navLinks">
@@ -375,9 +444,7 @@ footer strong{
         <a href="contact.html">Contact</a>
     </nav>
 
-    <button class="menu-btn" id="menuBtn">
-        ☰
-    </button>
+    <button class="menu-btn" id="menuBtn">☰</button>
 
 </header>
 
@@ -387,16 +454,10 @@ footer strong{
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-small">
-                SPECIALIZED ACADEMIC & RESEARCH PORTFOLIO
-            </div>
-            <h1>
-                Aquaculturist & <span>Overseas Research</span>
-            </h1>
+            <div class="hero-small">ACADEMIC EXCELLENCE & GLOBAL RESEARCH JOURNEY</div>
+            <h1>Aquaculturist & <span>Overseas Research</span></h1>
             <div class="hero-line"></div>
-            <p>
-                Highlighting advanced research studies, international master's thesis findings, and specialized aquaculture innovations from Universiti Putra Malaysia.
-            </p>
+            <p>From the green campus of Bangladesh Agricultural University to world-class research excellence at Universiti Putra Malaysia (UPM).</p>
         </div>
     </div>
 </section>
@@ -407,40 +468,82 @@ footer strong{
 <main class="main">
     <div class="container">
         
-        <!-- THESIS RESEARCH SECTION -->
+        <!-- SECTION 1: EDUCATIONAL JOURNEY & OVERSEAS VISION -->
         <div class="section-card">
-            <h2>🐟 Master of Science Thesis in Aquaculture</h2>
-            <div class="meta-box">
-                <strong>Thesis Title:</strong> Evaluation of Nannochloropsis sp.-Enriched Brachionus sp. as Live Feed for Enhancing the Growth and Survival of Milkfish (Chanos chanos) Larvae<br>
-                <strong>Researcher:</strong> Nusrat Nasrin<br>
-                <strong>Institution:</strong> School of Graduate Studies, Department of Aquaculture, Faculty of Agriculture, Universiti Putra Malaysia (UPM)<br>
-                <strong>Completion Date:</strong> February 2026
-            </div>
+            <h2>🎓 Academic Evolution: From Bangladesh to Malaysia</h2>
             <p class="content-text">
-                <strong>Abstract Overview:</strong> The long-term sustainability of the aquaculture sector hinges on the continuous production of healthy fish seed. This comprehensive graduate research investigates the live-feed sequence including laboratory culture of <em>Nannochloropsis sp.</em>, production and nutritional enrichment of <em>Brachionus sp.</em>, and its subsequent impact on enhancing the growth, survival, and nutritional profile of milkfish (<em>Chanos chanos</em>) larvae during early hatchery production.
+                Nusrat Nasrin’s academic pathway is rooted in a deep passion for agricultural sciences and sustainable food systems. Having achieved outstanding academic distinction in Fisheries from the green 1,250-acre campus of **Bangladesh Agricultural University (BAU)** between 2018 and 2024, she harbored a lifelong vision to pursue advanced higher education and research on an international platform.
             </p>
             <p class="content-text">
-                The findings provide critical insights into live-feed management strategies, optimizing nutritional transfer from microalgae to rotifers and subsequently to commercial fish larvae to mitigate excessive larval mortality in tropical and subtropical hatcheries.
+                Driven by self-reliance, leadership ambitions, and inspired by family business acumen, she moved to Malaysia. To broaden her administrative and management expertise, she successfully completed a specialized Master of Business Administration (MBA) at the **Kuala Lumpur University of Science and Technology**. 
+            </p>
+
+            <div class="inst-banner">
+                <img src="https://i.postimg.cc/rmGJCqBk/upm-new-logo-png-seeklogo-191274.png" alt="UPM Logo" class="inst-logo">
+                <div class="inst-info">
+                    <h4>Universiti Putra Malaysia (UPM) — World Class Research Hub</h4>
+                    <p>Ranked among the top global institutions (QS World Ranking ~130). Known globally for agricultural and aquaculture excellence, serving as the academic home for numerous distinguished researchers and professors.</p>
+                </div>
+            </div>
+
+            <p class="content-text">
+                In 2026, aligning with her ultimate scientific aspiration, she stepped into the prestigious Faculty of Agriculture, Department of Aquaculture at **Universiti Putra Malaysia (UPM)** to pursue her Master of Science (M.Sc.) in Aquaculture under the supervision of Dr. Umi Wahidah Ahmad Dini.
             </p>
         </div>
 
-        <!-- OVERSEAS RESEARCH & ACADEMIC FOCUS -->
+        <!-- SECTION 2: MASTER OF SCIENCE THESIS & RESEARCH DETAILS -->
         <div class="section-card">
-            <h2>🌍 Overseas Research & International Scope</h2>
+            <h2>🔬 M.Sc. Thesis & Advanced Research Focus</h2>
+            
+            <div class="meta-box">
+                <strong>Thesis Title:</strong> Evaluation of Nannochloropsis sp.-Enriched Brachionus sp. as Live Feed for Enhancing the Growth and Survival of Milkfish (Chanos chanos) Larvae<br>
+                <strong>Researcher:</strong> Nusrat Nasrin | <strong>Degree:</strong> Master of Science in Aquaculture<br>
+                <strong>Chair / Supervisor:</strong> Dr. Umi Wahidah Ahmad Dini<br>
+                <strong>Department:</strong> Department of Aquaculture, Faculty of Agriculture, Universiti Putra Malaysia (UPM) (February 2026)
+            </div>
+
             <p class="content-text">
-                As an overseas researcher pursuing advanced studies at Universiti Putra Malaysia, the academic focus bridges modern biotechnology and sustainable aquatic food production systems tailored for regional and international aquaculture development.
+                <strong>Background & Problem Statement:</strong> Global aquaculture is experiencing rapid expansion to meet surging aquatic protein demands (FAO, 2024). However, hatchery production remains constrained by high larval mortality during the critical transition from endogenous yolk reserves to exogenous feeding. Fish larvae possess undeveloped digestive tracts, tiny mouth gaps, and poor swimming capabilities, making live-feed quality paramount.
+            </p>
+
+            <p class="content-text">
+                <strong>Methodology & Symbiotic Pathway:</strong> The research investigates the complete sequential live-feed chain:
             </p>
             
             <div class="grid-2">
                 <div class="info-box">
-                    <h4>Nutritional Enhancement</h4>
-                    <p>Studying biochemical profiles, omega-3 fatty acids (EPA), and lipid enrichment techniques in microalgae-rotifer symbiotic food chains.</p>
+                    <h4>1. Microalgae Culture (Nannochloropsis sp.)</h4>
+                    <p>Cultivated under controlled laboratory conditions using Guillard's F/2 medium (24–26°C, 30–35 ppt salinity). Evaluated for high protein, lipid, antioxidant, and EPA (eicosapentaenoic acid) content to serve as the prime biological producer.</p>
                 </div>
                 <div class="info-box">
-                    <h4>Larviculture Optimization</h4>
-                    <p>Addressing early-stage vulnerability, digestive tract constraints, and stress resilience of high-value commercial fish species like Milkfish.</p>
+                    <h4>2. Rotifer Production & Enrichment (Brachionus sp.)</h4>
+                    <p>Utilized as a biological vector (starter feed) to ingest and bio-transfer essential nutrients. Enriched for 12–24 hours with concentrated <em>Nannochloropsis sp.</em> to drastically boost fatty acid profiles before larval consumption.</p>
                 </div>
             </div>
+
+            <div style="margin-top: 20px;"></div>
+
+            <div class="info-box" style="width: 100%;">
+                <h4>3. Milkfish Larvae Rearing Experiment (Chanos chanos)</h4>
+                <p>Conducted in a Completely Randomized Design (CRD) across multiple treatments (comparing non-enriched rotifers, enriched rotifers, and commercial diets). Evaluates final length gain, weight gain, specific growth rate (SGR), and overall survival percentage alongside strict daily water quality maintenance (Temperature, pH, DO, Salinity, and Ammonia).</p>
+            </div>
+        </div>
+
+        <!-- SECTION 3: SIGNIFICANCE & FUTURE IMPACT -->
+        <div class="section-card">
+            <h2>🌍 Global Significance & Future Impact</h2>
+            <p class="content-text">
+                This comprehensive graduate study bridges critical research gaps in tropical and subtropical marine hatcheries, particularly for economically vital species like milkfish (<em>Chanos chanos</em>) across Southeast Asia. By establishing reliable microalgal biomass production protocols and optimizing live-feed enrichment matrices, this research directly contributes to sustainable juvenile seed production, enhanced larval stress resilience, and improved commercial hatchery profitability.
+            </p>
+        </div>
+
+        <!-- RESEARCHGATE INTEGRATION -->
+        <div class="rg-container">
+            <h3>Explore Complete Publications & Academic Profile</h3>
+            <p>Access peer-reviewed findings, citation metrics, and ongoing academic collaborations through ResearchGate.</p>
+            <a href="https://www.researchgate.net" target="_blank" class="btn-rg">
+                🌐 Visit ResearchGate Profile
+            </a>
         </div>
 
     </div>
@@ -450,10 +553,7 @@ footer strong{
 <!-- ================= FOOTER ================= -->
 
 <footer>
-    © 2026
-    <strong>Nusrat Nasrin</strong>
-    |
-    Aquaculturist | Master of Science in Aquaculture (UPM)
+    © 2026 <strong>Nusrat Nasrin</strong> | Master of Science in Aquaculture (UPM) | Aquaculturist & Overseas Researcher
 </footer>
 
 
