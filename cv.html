@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NUSRAT NASRIN | PROFILE / CV</title>
+
+<meta name="description"
+content="Professional CV and Resume of Nusrat Nasrin — Agriculturist, Fisheries Researcher, and Aquatic Science Specialist.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',Arial,sans-serif;
+    background:#071b3a;
+    color:#142542;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+:root{
+    --navy:#071b3a;
+    --navy2:#0a2855;
+    --blue:#1769d5;
+    --blue2:#2d83f6;
+    --light:#f5f9ff;
+    --white:#ffffff;
+    --text:#142542;
+    --muted:#65738a;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:14px;
+    left:50%;
+    transform:translateX(-50%);
+    width:calc(100% - 28px);
+    max-width:1180px;
+    height:62px;
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+    z-index:9999;
+    box-shadow:0 12px 35px rgba(10,45,90,.12);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+    font-size:14px;
+    font-weight:800;
+    color:#193253;
+}
+
+.logo-mark{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#fff;
+    border:1px solid #d8e5f6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#174e9b;
+    font-size:12px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#174e9b;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:29px;
+}
+
+.nav-links a{
+    font-size:11px;
+    font-weight:600;
+    color:#243553;
+    position:relative;
+    padding:23px 0;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1769d5;
+}
+
+.nav-links a.active{
+    color:#1769d5;
+}
+
+.nav-links a.active::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:34px;
+    height:3px;
+    background:#1769d5;
+    border-radius:10px;
+}
+
+.menu-btn{
+    display:none;
+    width:40px;
+    height:40px;
+    border:0;
+    border-radius:10px;
+    background:#edf5ff;
+    color:#1769d5;
+    font-size:20px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:280px;
+    padding-top:120px;
+    padding-bottom:40px;
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(45,131,246,.12),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5f9ff 100%
+        );
+    position:relative;
+    overflow:hidden;
+    border-radius:0 0 42px 42px;
+}
+
+.container{
+    width:calc(100% - 70px);
+    max-width:1120px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+.hero-content{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto;
+}
+
+.hero-small{
+    color:#1b68c8;
+    font-size:10px;
+    letter-spacing:3px;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:clamp(32px,4vw,48px);
+    line-height:1.1;
+    letter-spacing:-1.5px;
+    font-weight:900;
+    color:#071b3a;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    color:#185eb9;
+}
+
+.hero-line{
+    width:50px;
+    height:3px;
+    background:#1769d5;
+    margin:12px auto;
+}
+
+.hero p{
+    color:#65738a;
+    font-size:12px;
+    line-height:1.7;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main{
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #12366b,
+            transparent 45%
+        ),
+        #071b3a;
+    padding:50px 0 70px;
+}
+
+.cv-wrapper{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.cv-card-inner{
+    padding:40px 20px;
+    background:#f8fbff;
+    border:2px dashed #d0e3ff;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.cv-icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.cv-card-inner h3{
+    color:#071b3a;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.cv-card-inner p{
+    color:#65738a;
+    font-size:13px;
+    margin-bottom:25px;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.7;
+}
+
+.btn-group{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:12px 25px;
+    font-size:13px;
+    font-weight:700;
+    border-radius:10px;
+    text-decoration:none;
+    transition:0.3s;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+
+.btn-view{
+    background:#fff;
+    color:#1769d5;
+    border:2px solid #1769d5;
+}
+
+.btn-view:hover{
+    background:#f0f7ff;
+}
+
+.btn-download{
+    background:#1769d5;
+    color:#fff;
+    border:2px solid #1769d5;
+}
+
+.btn-download:hover{
+    background:#0d438e;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#061731;
+    color:#9aacc4;
+    text-align:center;
+    padding:25px;
+    font-size:10px;
+}
+
+footer strong{
+    color:#fff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    .navbar{
+        width:calc(100% - 20px);
+        top:10px;
+        height:58px;
+        padding:0 16px;
+    }
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:68px;
+        left:0;
+        width:100%;
+        padding:18px;
+        background:#fff;
+        border-radius:15px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+        box-shadow:0 15px 30px rgba(20,50,90,.12);
+    }
+    .nav-links.active{
+        display:flex;
+    }
+    .nav-links a{
+        padding:4px 0;
+        width:100%;
+    }
+    .menu-btn{
+        display:block;
+    }
+    .container{
+        width:calc(100% - 30px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <div class="logo-mark">
+            AN
+        </div>
+        <div>
+            NUSRAT <span>NASRIN</span>
+        </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agriculturist.html">Agriculturist</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="resume.html" class="active">Profile / CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-small">
+                CURRICULUM VITAE
+            </div>
+            <h1>
+                Professional Profile & <span>Resume</span>
+            </h1>
+            <div class="hero-line"></div>
+            <p>
+                Access Nusrat Nasrin’s official professional profile, academic credentials, and career history.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main class="main">
+    <div class="container">
+        <div class="cv-wrapper">
+            
+            <div class="cv-card-inner">
+                <div class="cv-icon">📄</div>
+                <h3>Nusrat Nasrin - Official CV Document</h3>
+                <p>
+                    You can instantly view the CV in a new browser tab or download a copy directly to your device for offline review.
+                </p>
+                                <div class="btn-group">
+                    <!-- Google Drive View Link -->
+                    <a href="https://drive.google.com/file/d/1oiz9PESbGnZtfOEPxZ4LeyP__dqxwdD4/view?usp=sharing" target="_blank" class="btn btn-view">
+                        🔍 Open / View PDF
+                    </a>
+                    <!-- Google Drive Direct Download Link -->
+                    <a href="https://drive.google.com/uc?export=download&id=1oiz9PESbGnZtfOEPxZ4LeyP__dqxwdD4" class="btn btn-download">
+                        📥 Download PDF
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    © 2026
+    <strong>Nusrat Nasrin</strong>
+    |
+    Agriculturist | Aquaculturist | Researcher | Head Of Marketing
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+    navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+    link.addEventListener("click", function(){
+        navLinks.classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>
